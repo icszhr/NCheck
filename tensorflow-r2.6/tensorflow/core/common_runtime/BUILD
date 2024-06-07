@@ -696,6 +696,7 @@ cc_library(
         ":device_factory",
         "//tensorflow/core:lib",
         "//tensorflow/core:lib_internal",
+        "//tensorflow/core:framework",
     ],
 )
 
@@ -1422,6 +1423,7 @@ cc_library(
         "//tensorflow/core:lib_internal",
         "//third_party/eigen3",
         "@com_google_absl//absl/memory",
+        "//tensorflow/core:framework",
     ],
 )
 

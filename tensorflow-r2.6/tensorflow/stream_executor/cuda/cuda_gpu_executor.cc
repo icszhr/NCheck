@@ -623,7 +623,7 @@ port::Status GpuExecutor::Memset32(Stream* stream, DeviceMemoryBase* location,
 
 bool GpuExecutor::Memcpy(Stream* stream, void* host_dst,
                          const DeviceMemoryBase& gpu_src, uint64 size) {
-                          LOG(INFO)<<"GPU2CPU_C: "<<size<<"B";
+                          //LOG(INFO)<<"GPU2CPU_C: "<<size<<"B";NCheckAn
   return GpuDriver::AsynchronousMemcpyD2H(context_, host_dst,
                                           AsCudaDevicePtr(gpu_src), size,
                                           AsGpuStreamValue(stream));

@@ -110,7 +110,7 @@ bool HostExecutor::Memcpy(Stream *stream, void *host_dst,
 
 bool HostExecutor::Memcpy(Stream *stream, DeviceMemoryBase *gpu_dst,
                           const void *host_src, uint64 size) {
-                            LOG(INFO)<<"GPU2CPU_H: "<<size;
+                            //LOG(INFO)<<"GPU2CPU_H: "<<size;NCheckAn
   void *dst_mem = gpu_dst->opaque();
   // Enqueue the [asynchronous] memcpy on the stream (HostStream) associated
   // with the HostExecutor.

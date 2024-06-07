@@ -412,9 +412,9 @@ void* BFCAllocator::AllocateRawInternal(size_t unused_alignment,
   if (ptr != nullptr) {
     //here
     AddTraceMe("MemoryAllocation", ptr);
-    LOG(INFO)<<"GPU, allocated: "<<stats_.bytes_in_use
-    <<", peak_memory: "<<stats_.peak_bytes_in_use<<", reserved: "
-    <<stats_.bytes_reserved<<", GPU fragment: "<<GetFragmentation();
+    //LOG(INFO)<<"GPU, allocated: "<<stats_.bytes_in_use
+    //<<", peak_memory: "<<stats_.peak_bytes_in_use<<", reserved: "
+    //<<stats_.bytes_reserved<<", GPU fragment: "<<GetFragmentation();NCheckAn
     return ptr;
   }
 
@@ -532,8 +532,8 @@ void BFCAllocator::AddTraceMe(absl::string_view traceme_name,
 void* BFCAllocator::FindChunkPtr(BinNum bin_num, size_t rounded_bytes,
                                  size_t num_bytes, uint64 freed_before) {
   // First identify the first bin that could satisfy rounded_bytes.
-  LOG(INFO)<<"bin_num: "<<bin_num<<", rounded_bytes: "<<rounded_bytes<< \
-  ", num_bytes: "<<num_bytes<<", freed_before: "<<freed_before;
+  //LOG(INFO)<<"bin_num: "<<bin_num<<", rounded_bytes: "<<rounded_bytes<< \
+  ", num_bytes: "<<num_bytes<<", freed_before: "<<freed_before;NCheckAn
   for (; bin_num < kNumBins; bin_num++) {
     // Start searching from the first bin for the smallest chunk that fits
     // rounded_bytes.

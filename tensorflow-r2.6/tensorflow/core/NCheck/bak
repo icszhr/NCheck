@@ -1,0 +1,97 @@
+
+
+cc_library(
+    name = "tensor_categorization",
+    srcs = ["tensor_categorization.cc"],
+    hdrs = ["tensor_categorization.h"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//tensorflow/core/framework:tensor",
+    ],
+)
+
+load("//tensorflow:tensorflow.bzl", "tf_cuda_library")
+
+cc_library(
+    name = "invm_allocator",
+    hdrs = ["invm_allocator.h"],
+    visibility = ["//visibility:public"]
+)
+
+tf_cuda_library(
+    name = "nvm_allocator",
+    srcs = ["nvm_allocator.cc"],
+    hdrs = ["nvm_allocator.h"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//third_party/eigen3",
+        "//tensorflow/core/framework:allocator",
+        "//tensorflow/core/platform:platform",
+        "//tensorflow/core/NCheck:invm_allocator",
+    ],
+    linkopts = ["-lpmem"],
+)
+
+tf_cuda_library(
+    name = "nvm_allocator_adapter",
+    srcs = ["nvm_allocator_adapter.cc"],
+    hdrs = ["nvm_allocator_adapter.h"],
+    deps = [
+        ":invm_allocator", 
+        "//tensorflow/core/framework:allocator",
+        "//tensorflow/core/NCheck:nvm_allocator",
+    ],
+    visibility = ["//visibility:public"],
+)
+)
+
+tf_cuda_library(
+    name = "tensor_manager",
+    srcs = ["tensor_manager.cc"],
+    hdrs = ["tensor_manager.h"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//tensorflow/core:framework",
+        "//tensorflow/core/util:tensor_categorization",
+    ],
+)
+
+tf_cuda_library(
+    name = "ncheck_persist",
+    srcs = ["persist.cc"],
+    hdrs = ["persist.h"],
+    deps = [
+        "@com_google_absl//absl/strings",
+        "//third_party/eigen3",
+        "@com_google_protobuf//:protobuf",
+        "//tensorflow/core/NCheck:nvm_allocator",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+tf_cuda_library(
+    name = "tensor_metadata",
+    srcs = ["tensor_metadata.cc"],
+    hdrs = ["tensor_metadata.h"],
+    visibility = ["//visibility:public"],
+    deps = [
+#        "//tensorflow/core/NCheck:ncheck_persist",
+        "@com_google_absl//absl/base",
+        "//third_party/eigen3",
+#        "//tensorflow/core/framework:tensor",
+        "@com_google_protobuf//:protobuf",
+    ],
+)
+
+tf_cuda_library(
+    name = "model_metadata",
+    srcs = ["model_metadata.cc"],
+    hdrs = ["model_metadata.h"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//tensorflow/core:framework",
+        "//third_party/eigen3",
+        "//tensorflow/core/NCheck:ncheck_persist",
+    ],
+)
+

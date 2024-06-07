@@ -1,0 +1,105 @@
+#include <libpmem.h>
+#include <iostream>
+#include <string>
+
+#include "tensorflow/core/framework/allocator.h"
+#include "tensorflow/core/framework/allocator_registry.h"
+#include "tensorflow/core/framework/tracking_allocator.h"
+#include "tensorflow/core/lib/strings/strcat.h"
+#include "tensorflow/core/lib/strings/stringprintf.h"
+#include "tensorflow/core/platform/mem.h"
+#include "tensorflow/core/platform/mutex.h"
+#include "tensorflow/core/platform/types.h"
+#include "tensorflow/core/NCheck/nvm_allocator.h"
+
+class NVMAllocator {
+private:
+    static NVMAllocator* instance_;
+    memkind_t kind_;
+    std::mutex mu_;
+    AllocatorStats stats_;
+    std::unordered_map<void*, size_t> allocation_map_; // Map to track allocation sizes
+
+    NVMAllocator() {
+        Init();
+    }
+
+    // Private destructor
+    ~NVMAllocator() {
+        if (kind_) {
+            memkind_destroy_kind(kind_);
+        }
+    }
+
+    // Initialize NVM using memkind
+    void Init() {
+        const std::string file_path = "/pmem/zhr/";
+        if (memkind_create_pmem(file_path.c_str(), 0, &kind_) != 0) {
+            std::cerr << "Failed to initialize memkind for file: " << file_path << std::endl;
+        }
+    }
+
+public:
+    static NVMAllocator* GetInstance() {
+        static std::mutex mutex;
+        std::lock_guard<std::mutex> lock(mutex);
+        if (instance_ == nullptr) {
+            instance_ = new NVMAllocator();
+        }
+        return instance_;
+    }
+
+    void* AllocateRaw(size_t alignment, size_t num_bytes) {
+        std::lock_guard<std::mutex> lock(mu_);
+        void* ptr = memkind_malloc(kind_, num_bytes);
+        if (ptr == nullptr) {
+            throw std::bad_alloc();
+        }
+        //pmem_persist(ptr, num_bytes);
+        //try zero-copy persist
+        
+        stats_.num_allocs++;
+        stats_.bytes_in_use += num_bytes;
+        stats_.peak_bytes_in_use = std::max(stats_.peak_bytes_in_use, stats_.bytes_in_use);
+        stats_.largest_alloc_size = std::max(stats_.largest_alloc_size, num_bytes);
+        allocation_map_[ptr] = num_bytes;
+
+        return ptr;
+    }
+
+    void DeallocateRaw(void* ptr) {
+        std::lock_guard<std::mutex> lock(mu_);
+        if (allocation_map_.find(ptr) != allocation_map_.end()) {
+            size_t alloc_size = allocation_map_[ptr];
+            stats_.bytes_in_use -= alloc_size;
+            allocation_map_.erase(ptr);
+            memkind_free(kind_, ptr);
+        }
+    }
+
+    void persist(void* ptr) {
+        if (allocation_map_.find(ptr) != allocation_map_.end()) {
+            size_t size = allocation_map_[ptr];
+            pmem_persist(ptr, size);
+        } else {
+            std::cerr << "Attempted to persist non-tracked NVM allocation" << std::endl;
+        }
+    }
+
+    size_t GetAllocatedSize(const void* ptr) const {
+        std::lock_guard<std::mutex> lock(mu_);
+        auto it = allocation_map_.find(const_cast<void*>(ptr));
+        if (it != allocation_map_.end()) {
+            return it->second;
+        }
+        return 0;
+    }
+
+    AllocatorStats GetStats() const {
+        std::lock_guard<std::mutex> lock(mu_);
+        return stats_;
+    }
+};
+
+// Initialize static member
+NVMAllocator* NVMAllocator::instance_ = nullptr;

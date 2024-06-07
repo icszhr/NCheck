@@ -410,6 +410,7 @@ cc_library(
 # purposefully omits the definitions of many declared symbols, which are
 # included in //tensorflow:libtensorflow_framework.so. Using tf_cc_test and tf_cc_binary
 # will include the necessary symbols.
+
 tf_cuda_library(
     name = "framework",
     hdrs = [
@@ -483,14 +484,20 @@ tf_cuda_library(
         "//tensorflow/core/util:framework_srcs",
         "//tensorflow/core/util:memmapped_file_system_hdrs",
         "//tensorflow/core/public:version.h",
+        "//tensorflow/core/framework:nvm_allocator.h", #NCheck
     ] + if_mkl([
         "//tensorflow/core/util:mkl_util_hdrs",
     ]),
+    srcs = [
+        "//tensorflow/core/framework:nvm_allocator.cc", #NCheck
+    ],
     visibility = ["//visibility:public"],
     deps = [
         ":framework_internal",
         "@com_google_absl//absl/base",
+        "//tensorflow/core/NCheck:tensor_metadata", #NCheck
     ],
+    linkopts = ["-lpmem"],
 )
 
 alias(
@@ -1573,6 +1580,7 @@ tf_cuda_library(
         ":framework_internal_headers_lib",
         "//third_party/eigen3",
         ":lib",
+        "//tensorflow/core/NCheck:tensor_metadata",
     ] + if_static(
         extra_deps = [
             ":framework_internal_impl",
@@ -1675,6 +1683,8 @@ tf_cuda_library(
         "//tensorflow/core/util:stats_calculator_portable",
         "//tensorflow/core/util:tensor_format",
         "//tensorflow/compiler/jit:common",
+        "//tensorflow/core/NCheck:tensor_metadata",
+        "//tensorflow/core:framework",
     ] + if_cuda([
         "@local_config_cuda//cuda:cudnn_header",
     ]) + if_static(
@@ -2054,6 +2064,29 @@ transitive_hdrs(
         "//tensorflow/core/platform:stream_executor",
     ],
 )
+
+cc_library(
+    name = "core_extended",  # 将 'core' 改为 'core_extended'
+    srcs = glob([
+        "framework/*.cc",
+        "util/*.cc",
+        "NCheck/*.cc",  # 包含 NCheck 目录下所有的 .cc 文件
+    ]),
+    hdrs = glob([
+        "framework/*.h",
+        "util/*.h",
+        "NCheck/*.h",  # 包含 NCheck 目录下所有的头文件
+    ]),
+    visibility = ["//visibility:public"],
+    deps = [
+        "//tensorflow/core/platform:platform",
+        "//tensorflow/core:framework_internal",
+        "//tensorflow/core:protobuf",
+        "//third_party/eigen3",
+        "//third_party/gpus/cuda",
+    ],
+)
+
 
 # copybara:uncomment_begin(google-only)
 # py_proto_library(

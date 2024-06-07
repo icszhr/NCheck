@@ -55,6 +55,8 @@ limitations under the License.
 #include "tensorflow/core/platform/types.h"
 #include "tensorflow/core/protobuf/config.pb.h"
 #include "tensorflow/core/util/managed_stack_trace.h"
+#include "tensorflow/core/framework/nvm_allocator.h"
+#include "tensorflow/core/NCheck/tensor_metadata.h"
 
 namespace Eigen {
 struct ThreadPoolDevice;

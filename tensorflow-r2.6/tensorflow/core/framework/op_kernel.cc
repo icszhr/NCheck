@@ -56,6 +56,8 @@ limitations under the License.
 #include "tensorflow/core/platform/types.h"
 #include "tensorflow/core/profiler/lib/traceme.h"
 #include "tensorflow/core/util/ptr_util.h"
+#include "tensorflow/core/NCheck/tensor_metadata.h"
+#include "tensorflow/core/framework/nvm_allocator.h"
 
 namespace tensorflow {
 
@@ -684,6 +686,7 @@ Status OpKernelContext::allocate_output(StringPiece name,
 Status OpKernelContext::allocate_tensor(
     DataType type, const TensorShape& shape, Tensor* out_tensor,
     AllocatorAttributes attr, const AllocationAttributes& allocation_attr) {
+  tensorflow::TensorMetadataCollector metadataCollector;
   Allocator* a = get_allocator(attr);
   Tensor new_tensor(
       a, type, shape,
@@ -701,6 +704,12 @@ Status OpKernelContext::allocate_tensor(
                                       params_->step_id, new_tensor);
   }
   *out_tensor = std::move(new_tensor);
+  NVMAllocator* na = NVMAllocator::GetInstance();
+  void* base = na->GetBaseAddress();
+  void* ptr = na->AllocateRaw(8,out_tensor->AllocatedBytes());
+  
+  metadataCollector.SaveTensorMetadata(base, ptr, DataTypeString(type), shape.DebugString(), params_->op_kernel->name());
+  LOG(INFO)<<"Write in: "<< params_->op_kernel->name() + "|" + DataTypeString(type) + "|" + shape.DebugString()+ "|" + std::to_string(size_t(ptr));
   return Status::OK();
 }
 

@@ -1,3 +1,7 @@
+exports_files([
+    "nvm_allocator.h",
+    "nvm_allocator.cc",
+])#NCheck add
 load(
     "//tensorflow/core/platform:build_config.bzl",
     "tf_kernel_tests_linkstatic",
@@ -770,6 +774,7 @@ tf_cuda_library(
         "//tensorflow/core/tfrt/utils:__subpackages__",
         "//tensorflow/core/util:__pkg__",
         "//tensorflow/security/fuzzing:__subpackages__",
+        "//tensorflow/core/NCheck:__pkg__",
     ],
     deps = [
         ":allocation_description_proto_cc",
@@ -1681,3 +1686,4 @@ tf_proto_library(
         "alt_dep=//third_party/tensorflow/core:protos_all",
     ],
 )
+
