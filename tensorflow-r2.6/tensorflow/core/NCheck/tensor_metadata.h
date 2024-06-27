@@ -12,10 +12,10 @@ private:
 public:
     TensorMetadataCollector();
 
-    void SaveTensorMetadata(void* base, void* nptr, const std::string& dtype, const std::string& shape, const std::string& name);
-
+    void SaveTensorMetadata(void* base, void* nptr, const std::string& dtype, const std::string& shape, const std::string& name, int count);
+    void* LoadTensor(void* base, const std::string& name, int count);
 private:
-    std::string CreateTensorMetadata(const std::string& dtype, const std::string& shape, const std::string& name, int tensor_id, void* nptr);
+    std::string CreateTensorMetadata(const std::string& dtype, const std::string& shape, const std::string& name, int tensor_id, void* nptr, int count);
 };
 
 }  // namespace tensorflow

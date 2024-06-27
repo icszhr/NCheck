@@ -683,10 +683,45 @@ Status OpKernelContext::allocate_output(StringPiece name,
   return allocate_output(start, shape, tensor, attr);
 }
 
+bool shouldPersist(const std::string& opName) {
+    const std::vector<std::string> persistKeywords = {
+        "grad", "gradient", "Relu", "Softmax", "Tanh", "Adam", "Momentum", "SGD", "batchnorm", "BatchNorm"
+    };
+    
+    for (const auto& keyword : persistKeywords) {
+        if (opName.find(keyword) != std::string::npos) {
+            return true;
+        }
+    }
+    return false;
+}
+tensorflow::TensorMetadataCollector metadataCollector;
+  NVMAllocator* na = NVMAllocator::GetInstance();
+
+  void* base = na->GetBaseAddress();
+int count = 0;
+std::string cur_name;
+
+
 Status OpKernelContext::allocate_tensor(
     DataType type, const TensorShape& shape, Tensor* out_tensor,
     AllocatorAttributes attr, const AllocationAttributes& allocation_attr) {
-  tensorflow::TensorMetadataCollector metadataCollector;
+      if(params_->op_kernel->name() == cur_name){
+        count += 1;
+      }
+  else{
+    count = 0;
+  }
+      if (shouldPersist(params_->op_kernel->name())) {
+    
+  
+  LOG(INFO)<<"DEBUG 1, "<<"total: "<<params_->op_kernel->num_outputs()<<", count: "<<count;
+  //NVMAllocator* na = NVMAllocator::GetInstance();
+  //LOG(INFO)<<"DEBUG 2";
+  //void* base = na->GetBaseAddress();
+  LOG(INFO)<<"DEBUG 3, "<<params_->op_kernel->name();
+  void* perptr = metadataCollector.LoadTensor(base, params_->op_kernel->name(), count);
+  LOG(INFO)<<"pm ptr"<<perptr;}
   Allocator* a = get_allocator(attr);
   Tensor new_tensor(
       a, type, shape,
@@ -704,12 +739,15 @@ Status OpKernelContext::allocate_tensor(
                                       params_->step_id, new_tensor);
   }
   *out_tensor = std::move(new_tensor);
-  NVMAllocator* na = NVMAllocator::GetInstance();
-  void* base = na->GetBaseAddress();
+    if (shouldPersist(params_->op_kernel->name())) {
+      
   void* ptr = na->AllocateRaw(8,out_tensor->AllocatedBytes());
   
-  metadataCollector.SaveTensorMetadata(base, ptr, DataTypeString(type), shape.DebugString(), params_->op_kernel->name());
-  LOG(INFO)<<"Write in: "<< params_->op_kernel->name() + "|" + DataTypeString(type) + "|" + shape.DebugString()+ "|" + std::to_string(size_t(ptr));
+  metadataCollector.SaveTensorMetadata(base, ptr, DataTypeString(type), shape.DebugString(), params_->op_kernel->name(), count);
+  LOG(INFO)<<"Write in: "<< params_->op_kernel->name() + "|" + DataTypeString(type) + "|" + shape.DebugString()+ ", new offset: " << (static_cast<char*>(ptr) - static_cast<char*>(base));
+  }
+  
+  cur_name = params_->op_kernel->name();
   return Status::OK();
 }
 

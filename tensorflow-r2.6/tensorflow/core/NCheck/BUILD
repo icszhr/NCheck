@@ -5,7 +5,7 @@ tf_cuda_library(
     name = "ncheck_persist",
     srcs = ["persist.cc"],
     hdrs = ["persist.h"],
-    deps = [
+    deps = ["//tensorflow/core/platform:logging",
     ],
     visibility = ["//visibility:public"],
     linkopts = ["-lpmem"],
