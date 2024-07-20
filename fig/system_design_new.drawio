@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-20T04:17:44.118Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="pmZ-rFHSxwCjuA2AR-1S" version="24.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-20T07:18:43.074Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="mlH7AdXR8ngW6Q51ukBl" version="24.7.2" type="github">
   <diagram name="第 1 页" id="_ptrRFgUfufC5udD_pL1">
     <mxGraphModel dx="810" dy="458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -103,8 +103,8 @@
         </mxCell>
         <mxCell id="TOuNfcGNLnMNuh-A6v8q-43" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;entryX=1;entryY=0.25;entryDx=0;entryDy=0;endArrow=block;endFill=1;endSize=3;fontFamily=Times New Roman;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="171" y="360" as="sourcePoint" />
-            <mxPoint x="131" y="359.71" as="targetPoint" />
+            <mxPoint x="167" y="360" as="sourcePoint" />
+            <mxPoint x="127" y="359.71" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TOuNfcGNLnMNuh-A6v8q-44" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;endArrow=block;endFill=1;dashed=1;dashPattern=1 2;shape=flexArrow;width=3;startSize=6;endSize=3.4557692307692305;endWidth=4.615384615384615;fontFamily=Times New Roman;" parent="1" edge="1">
@@ -128,8 +128,8 @@
         <mxCell id="TOuNfcGNLnMNuh-A6v8q-48" value="&lt;font&gt;&lt;b&gt;Persistence Manager&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;(Section 4)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="150.5" y="150" width="193" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="TOuNfcGNLnMNuh-A6v8q-50" value="&lt;font&gt;&lt;b&gt;Pipeline Strategy&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;&lt;b&gt;(Section 5)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;" parent="1" vertex="1">
-          <mxGeometry x="486" y="245" width="99" height="30" as="geometry" />
+        <mxCell id="TOuNfcGNLnMNuh-A6v8q-50" value="&lt;font&gt;&lt;b&gt;Parallel Checkpoint&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b&gt;(Section 5)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="482.5" y="248" width="125" height="30" as="geometry" />
         </mxCell>
         <mxCell id="TOuNfcGNLnMNuh-A6v8q-51" value="" style="group;fontFamily=Times New Roman;fillColor=#D5E8D4;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="563" y="264" width="120" height="46" as="geometry" />
@@ -178,8 +178,8 @@
         <mxCell id="TOuNfcGNLnMNuh-A6v8q-63" value="OP3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="680" y="194" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="TOuNfcGNLnMNuh-A6v8q-66" value="&lt;font&gt;&lt;b&gt;OP-level Recovery&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;&lt;b&gt;(Section 6)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;" parent="1" vertex="1">
-          <mxGeometry x="480" y="161.25" width="104" height="30" as="geometry" />
+        <mxCell id="TOuNfcGNLnMNuh-A6v8q-66" value="&lt;font&gt;&lt;b&gt;OP-level Recovery&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b&gt;(Section 6)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="478" y="161.25" width="104" height="30" as="geometry" />
         </mxCell>
         <mxCell id="TOuNfcGNLnMNuh-A6v8q-67" value="A1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="605" y="150" width="31" height="20" as="geometry" />
