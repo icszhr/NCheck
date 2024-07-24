@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-20T02:17:13.509Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="8giYGpjiHmOy5jvbKJXA" version="24.7.2" type="github">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.4">
   <diagram name="第 1 页" id="wWWji1S4WTed1VP1iQNv">
-    <mxGraphModel dx="810" dy="458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="875" dy="442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -437,6 +437,18 @@
         </mxCell>
         <mxCell id="8Hu3aN6Surj9BdlVhD6L-137" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="447" y="342" width="20" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="O1AH87Ha46NWsjE_QZZE-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="165" y="240" width="27" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="O1AH87Ha46NWsjE_QZZE-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="346" y="240" width="27" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="O1AH87Ha46NWsjE_QZZE-3" value="Reserved Enries" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="192" y="230" width="108" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="O1AH87Ha46NWsjE_QZZE-4" value="Removed Enries" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="373" y="230" width="107" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
