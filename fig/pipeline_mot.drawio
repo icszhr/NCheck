@@ -55,8 +55,8 @@
         <mxCell id="_t_QEoP6cxp7WhYtKz9P-21" value="3" style="whiteSpace=wrap;fontFamily=Times New Roman;fontSize=12;fontStyle=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;spacing=0;fillColor=#CCCCCC;" parent="1" vertex="1">
           <mxGeometry x="460.5" y="410" width="10" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="_t_QEoP6cxp7WhYtKz9P-22" value="&lt;b&gt;(a) Synchronization&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=12;fontStyle=0;labelPosition=center;verticalLabelPosition=middle;spacing=0;" parent="1" vertex="1">
-          <mxGeometry x="393.7" y="451.03999999999996" width="103" height="30" as="geometry" />
+        <mxCell id="_t_QEoP6cxp7WhYtKz9P-22" value="&lt;b&gt;(a) Persist Pipelining&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=12;fontStyle=0;labelPosition=center;verticalLabelPosition=middle;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="393.7" y="451.04" width="105.3" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_t_QEoP6cxp7WhYtKz9P-23" value="&lt;b&gt;(b) CheckFreq&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=12;fontStyle=0;labelPosition=center;verticalLabelPosition=middle;spacing=0;" parent="1" vertex="1">
           <mxGeometry x="408.08" y="531.04" width="74.25" height="30" as="geometry" />
