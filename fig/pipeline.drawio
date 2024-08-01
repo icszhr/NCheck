@@ -483,6 +483,20 @@
             <mxPoint x="1" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="-gQGJUHY0MSu8fpjqqPA-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;fontFamily=Times New Roman;" edge="1" parent="1" source="-gQGJUHY0MSu8fpjqqPA-62" target="-gQGJUHY0MSu8fpjqqPA-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-gQGJUHY0MSu8fpjqqPA-61" value="&lt;span style=&quot;text-wrap: wrap; font-family: &amp;quot;Times New Roman&amp;quot;; background-color: rgb(251, 251, 251); font-size: 14px;&quot;&gt;G&lt;/span&gt;&lt;sub style=&quot;text-wrap: wrap; font-family: &amp;quot;Times New Roman&amp;quot;; background-color: rgb(251, 251, 251);&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;N+1&lt;/font&gt;&lt;/sub&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-gQGJUHY0MSu8fpjqqPA-60">
+          <mxGeometry x="-0.1089" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-gQGJUHY0MSu8fpjqqPA-62" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;GPUMEM&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="490" y="240.5" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-gQGJUHY0MSu8fpjqqPA-63" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;DRAM&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="620" y="240.5" width="70" height="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
