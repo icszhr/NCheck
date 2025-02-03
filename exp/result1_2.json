@@ -1,0 +1,42 @@
+[
+    {
+        "original_model_name": "ResNet50",
+        "total_time": 16.389824867248535,
+        "total_checkpoint_time": 1.629986047744751
+    },
+    {
+        "original_model_name": "ResNet101",
+        "total_time": 15.686541557312012,
+        "total_checkpoint_time": 2.4107673168182373
+    },
+    {
+        "original_model_name": "ResNet152",
+        "total_time": 18.84721088409424,
+        "total_checkpoint_time": 3.349062919616699
+    },
+    {
+        "original_model_name": "ResNet50V2",
+        "total_time": 12.688351154327393,
+        "total_checkpoint_time": 1.299670696258545
+    },
+    {
+        "original_model_name": "albert-base-v2",
+        "total_time": 4.819129228591919,
+        "total_checkpoint_time": 0.5254828929901123
+    },
+    {
+        "original_model_name": "distilbert-base-uncased",
+        "total_time": 3.1375489234924316,
+        "total_checkpoint_time": 3.00707745552063
+    },
+    {
+        "original_model_name": "bert-base-uncased",
+        "total_time": 6.0338170528411865,
+        "total_checkpoint_time": 4.267070293426514
+    },
+    {
+        "original_model_name": "bert-large-uncased",
+        "total_time": 11.318649530410767,
+        "total_checkpoint_time": 12.8791024684906
+    }
+]

@@ -1,0 +1,58 @@
+[
+    [
+        {
+            "model_name": "ResNet50",
+            "batch_size": 1,
+            "total_time": 5.273852586746216,
+            "total_checkpoint_time": 1.2985162734985352
+        },
+        {
+            "model_name": "GPT-2",
+            "batch_size": 1,
+            "total_time": 5.24636697769165,
+            "total_checkpoint_time": 3.2549028396606445
+        }
+    ],
+    [
+        {
+            "model_name": "ResNet50",
+            "batch_size": 2,
+            "total_time": 2.833543539047241,
+            "total_checkpoint_time": 1.4504244327545166
+        },
+        {
+            "model_name": "GPT-2",
+            "batch_size": 2,
+            "total_time": 5.392074346542358,
+            "total_checkpoint_time": 3.4663772583007812
+        }
+    ],
+    [
+        {
+            "model_name": "ResNet50",
+            "batch_size": 4,
+            "total_time": 2.8277695178985596,
+            "total_checkpoint_time": 1.4389913082122803
+        },
+        {
+            "model_name": "GPT-2",
+            "batch_size": 4,
+            "total_time": 5.273792743682861,
+            "total_checkpoint_time": 3.714156150817871
+        }
+    ],
+    [
+        {
+            "model_name": "ResNet50",
+            "batch_size": 8,
+            "total_time": 2.9167544841766357,
+            "total_checkpoint_time": 1.3476123809814453
+        },
+        {
+            "model_name": "GPT-2",
+            "batch_size": 8,
+            "total_time": 5.160818815231323,
+            "total_checkpoint_time": 4.523963689804077
+        }
+    ]
+]

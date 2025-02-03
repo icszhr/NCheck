@@ -1,0 +1,18 @@
+Model: ResNet50
+Total Time (excluding first iteration): 3.96 seconds
+
+Model: GPT-2
+Total Time (excluding first iteration): 2.41 seconds
+
+Model: BERT
+Total Time (excluding first iteration): 2.51 seconds
+
+Model: RoBERTa
+Total Time (excluding first iteration): 2.41 seconds
+
+Model: T5
+Total Time (excluding first iteration): 2.26 seconds
+
+Model: DistilBERT
+Total Time (excluding first iteration): 1.28 seconds
+

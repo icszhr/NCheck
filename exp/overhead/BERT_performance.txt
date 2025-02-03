@@ -1,0 +1,1 @@
+Total Time (excluding first iteration): 15.48 seconds

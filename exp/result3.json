@@ -1,0 +1,177 @@
+[
+    {
+        "checkpoint_frequency": 1,
+        "results": [
+            {
+                "model_name": "ResNet50",
+                "total_time": 5.729906320571899,
+                "total_checkpoint_time": 12.094960927963257
+            },
+            {
+                "model_name": "GPT-2",
+                "total_time": 5.816761493682861,
+                "total_checkpoint_time": 42.98339247703552
+            },
+            {
+                "model_name": "BERT",
+                "total_time": 5.325512409210205,
+                "total_checkpoint_time": 38.57747006416321
+            },
+            {
+                "model_name": "RoBERTa",
+                "total_time": 5.54353666305542,
+                "total_checkpoint_time": 40.660388708114624
+            },
+            {
+                "model_name": "T5",
+                "total_time": 5.531506299972534,
+                "total_checkpoint_time": 25.06539297103882
+            },
+            {
+                "model_name": "DistilBERT",
+                "total_time": 2.9321537017822266,
+                "total_checkpoint_time": 23.32206106185913
+            }
+        ]
+    },
+    {
+        "checkpoint_frequency": 5,
+        "results": [
+            {
+                "model_name": "ResNet50",
+                "total_time": 2.646221399307251,
+                "total_checkpoint_time": 2.608907699584961
+            },
+            {
+                "model_name": "GPT-2",
+                "total_time": 5.095950603485107,
+                "total_checkpoint_time": 8.109111547470093
+            },
+            {
+                "model_name": "BERT",
+                "total_time": 5.059259414672852,
+                "total_checkpoint_time": 8.393420219421387
+            },
+            {
+                "model_name": "RoBERTa",
+                "total_time": 5.071753263473511,
+                "total_checkpoint_time": 8.592216968536377
+            },
+            {
+                "model_name": "T5",
+                "total_time": 5.1626996994018555,
+                "total_checkpoint_time": 3.835557460784912
+            },
+            {
+                "model_name": "DistilBERT",
+                "total_time": 2.6588287353515625,
+                "total_checkpoint_time": 5.408997058868408
+            }
+        ]
+    },
+    {
+        "checkpoint_frequency": 10,
+        "results": [
+            {
+                "model_name": "ResNet50",
+                "total_time": 2.6472971439361572,
+                "total_checkpoint_time": 1.2528963088989258
+            },
+            {
+                "model_name": "GPT-2",
+                "total_time": 5.13647985458374,
+                "total_checkpoint_time": 4.235712289810181
+            },
+            {
+                "model_name": "BERT",
+                "total_time": 5.098941087722778,
+                "total_checkpoint_time": 3.888796329498291
+            },
+            {
+                "model_name": "RoBERTa",
+                "total_time": 5.093383312225342,
+                "total_checkpoint_time": 4.747257471084595
+            },
+            {
+                "model_name": "T5",
+                "total_time": 4.914446115493774,
+                "total_checkpoint_time": 1.9078559875488281
+            },
+            {
+                "model_name": "DistilBERT",
+                "total_time": 2.6306540966033936,
+                "total_checkpoint_time": 2.686612606048584
+            }
+        ]
+    },
+    {
+        "checkpoint_frequency": 15,
+        "results": [
+            {
+                "model_name": "ResNet50",
+                "total_time": 2.7800636291503906,
+                "total_checkpoint_time": 0.6142120361328125
+            },
+            {
+                "model_name": "GPT-2",
+                "total_time": 5.028208017349243,
+                "total_checkpoint_time": 1.7739012241363525
+            },
+            {
+                "model_name": "BERT",
+                "total_time": 4.93471622467041,
+                "total_checkpoint_time": 1.591722011566162
+            },
+            {
+                "model_name": "RoBERTa",
+                "total_time": 5.026795387268066,
+                "total_checkpoint_time": 1.9617373943328857
+            },
+            {
+                "model_name": "T5",
+                "total_time": 4.890109062194824,
+                "total_checkpoint_time": 1.0160157680511475
+            },
+            {
+                "model_name": "DistilBERT",
+                "total_time": 2.634594440460205,
+                "total_checkpoint_time": 1.195749044418335
+            }
+        ]
+    },
+    {
+        "checkpoint_frequency": 20,
+        "results": [
+            {
+                "model_name": "ResNet50",
+                "total_time": 2.7725048065185547,
+                "total_checkpoint_time": 0.620354413986206
+            },
+            {
+                "model_name": "GPT-2",
+                "total_time": 5.19371771812439,
+                "total_checkpoint_time": 1.819366455078125
+            },
+            {
+                "model_name": "BERT",
+                "total_time": 4.912233829498291,
+                "total_checkpoint_time": 1.7939367294311523
+            },
+            {
+                "model_name": "RoBERTa",
+                "total_time": 5.040282249450684,
+                "total_checkpoint_time": 1.9376015663146973
+            },
+            {
+                "model_name": "T5",
+                "total_time": 4.886419296264648,
+                "total_checkpoint_time": 1.1796722412109375
+            },
+            {
+                "model_name": "DistilBERT",
+                "total_time": 2.5893807411193848,
+                "total_checkpoint_time": 1.0728111267089844
+            }
+        ]
+    }
+]

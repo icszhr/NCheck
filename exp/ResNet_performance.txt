@@ -1,0 +1,15 @@
+forward_pass_time: 2.16 seconds
+backward_pass_time: 0.29 seconds
+weight_update_time: 0.19 seconds
+snapshot_to_cpu_time: 0.07 seconds
+save_to_ssd_time: 1.20 seconds
+serialization_time: 0.27 seconds
+open_time_serialize: 0.07 seconds
+write_time_serialize: 0.20 seconds
+close_time_serialize: 0.00 seconds
+ssd_copy_time_persist: 0.15 seconds
+open_time_load: 0.00 seconds
+read_time_load: 0.10 seconds
+close_time_load: 0.00 seconds
+ssd_copy_time_restore: 0.50 seconds
+deserialize_time: 0.10 seconds

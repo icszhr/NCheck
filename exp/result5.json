@@ -1,0 +1,26 @@
+[
+    {
+        "model_name": "ResNet50",
+        "total_time": 8.903237581253052
+    },
+    {
+        "model_name": "GPT-2",
+        "total_time": 11.398879289627075
+    },
+    {
+        "model_name": "BERT",
+        "total_time": 20.21284770965576
+    },
+    {
+        "model_name": "RoBERTa",
+        "total_time": 20.969029188156128
+    },
+    {
+        "model_name": "T5",
+        "total_time": 19.245502710342407
+    },
+    {
+        "model_name": "DistilBERT",
+        "total_time": 11.323641061782837
+    }
+]

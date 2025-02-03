@@ -1,0 +1,24 @@
+Model: ResNet50
+Total Time (excluding first iteration): 25.51/2 seconds
+Total Checkpoint Time: 7.24 seconds
+
+Model: GPT-2
+Total Time (excluding first iteration): 48.45/2 seconds
+Total Checkpoint Time: 27.73 seconds
+
+Model: BERT
+Total Time (excluding first iteration): 49.28/2 seconds
+Total Checkpoint Time: 25.82 seconds
+
+Model: RoBERTa
+Total Time (excluding first iteration): 50.93/2 seconds
+Total Checkpoint Blocking Time: 29.47 seconds
+
+Model: T5
+Total Time (excluding first iteration): 49.61/2 seconds
+Total Checkpoint Time: 16.36 seconds
+
+Model: DistilBERT
+Total Time (excluding first iteration): 26.00/2 seconds
+Total Checkpoint Blocking Time: 15.61 seconds
+

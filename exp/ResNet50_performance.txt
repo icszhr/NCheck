@@ -1,0 +1,9 @@
+forward_pass_time: 2.19 seconds
+backward_pass_time: 0.30 seconds
+weight_update_time: 0.20 seconds
+snapshot_to_cpu_time: 0.14 seconds
+serialization_time: 0.21 seconds
+write_and_ssd_copy_time: 1.16 seconds
+recovery_time: 0.91 seconds
+copy_to_dram_time: 0.07 seconds
+deserialization_time: 0.06 seconds

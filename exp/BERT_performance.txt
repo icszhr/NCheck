@@ -1,0 +1,9 @@
+execution_time: 0.44 seconds
+transmission_time: 0.40 seconds
+serialization_time: 0.29 seconds
+filesystem_operations_time: 0.00 seconds
+
+Checkpoint restore times:
+transmission_time: 0.04 seconds
+deserialization_time: 1.11 seconds
+filesystem_operations_time: 0.00 seconds

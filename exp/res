@@ -1,0 +1,6 @@
+2024-07-05 09:30:48.640718: I tensorflow/core/common_runtime/executor.cc:593] expensive OP ID: 1, op name: Placeholder/_1, input num: 0
+2024-07-05 09:30:48.640738: I tensorflow/core/common_runtime/executor.cc:593] expensive OP ID: 2, op name: Placeholder/_0, input num: 0
+2024-07-05 09:30:48.640747: I tensorflow/core/common_runtime/executor.cc:593] expensive OP ID: 3, op name: _send_Const/_6_0, input num: 1
+2024-07-05 09:30:48.640754: I tensorflow/core/common_runtime/executor.cc:593] expensive OP ID: 4, op name: _send_Const/_4_0, input num: 1
+2024-07-05 09:30:48.640759: I tensorflow/core/common_runtime/executor.cc:593] expensive OP ID: 5, op name: _send_Const/_3_0, input num: 1
+2024-07-05 09:30:48.681943: I tensorflow/core/common_runtime/executor.cc:593] expensive OP ID: 6, op name: TensorSliceDataset/_2, input num: 2

@@ -1,0 +1,262 @@
+/home/zhr/anaconda3/envs/p2/lib/python3.9/site-packages/huggingface_hub/utils/_runtime.py:184: UserWarning: Pydantic is installed but cannot be imported. Please check your installation. `huggingface_hub` will default to not using Pydantic. Error message: '{e}'
+  warnings.warn(
+All PyTorch model weights were used when initializing TFGPT2LMHeadModel.
+
+All the weights of TFGPT2LMHeadModel were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFGPT2LMHeadModel for predictions without further training.
+Some weights of the PyTorch model were not used when initializing the TF 2.0 model TFBertModel: ['cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing TFBertModel from a PyTorch model trained on another task or with another architecture (e.g. initializing a TFBertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing TFBertModel from a PyTorch model that you expect to be exactly identical (e.g. initializing a TFBertForSequenceClassification model from a BertForSequenceClassification model).
+All the weights of TFBertModel were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFBertModel for predictions without further training.
+Some weights of the PyTorch model were not used when initializing the TF 2.0 model TFRobertaModel: ['lm_head.layer_norm.bias', 'lm_head.dense.bias', 'lm_head.dense.weight', 'roberta.embeddings.position_ids', 'lm_head.layer_norm.weight', 'lm_head.bias']
+- This IS expected if you are initializing TFRobertaModel from a PyTorch model trained on another task or with another architecture (e.g. initializing a TFBertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing TFRobertaModel from a PyTorch model that you expect to be exactly identical (e.g. initializing a TFBertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights or buffers of the TF 2.0 model TFRobertaModel were not initialized from the PyTorch model and are newly initialized: ['roberta.pooler.dense.weight', 'roberta.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Running benchmark for ResNet50...
+Starting training for 1 epoch with 10 iterations
+Iteration 2 - Time taken for forward pass: 2.61 seconds
+Iteration 2 - Time taken for backward pass: 0.48 seconds
+Iteration 2 - Time taken for weight update: 0.19 seconds
+Iteration 2 - Total time taken for iteration: 3.29 seconds
+Iteration 3 - Time taken for forward pass: 0.20 seconds
+Iteration 3 - Time taken for backward pass: 0.20 seconds
+Iteration 3 - Time taken for weight update: 0.02 seconds
+Iteration 3 - Total time taken for iteration: 0.43 seconds
+Iteration 4 - Time taken for forward pass: 0.20 seconds
+Iteration 4 - Time taken for backward pass: 0.20 seconds
+Iteration 4 - Time taken for weight update: 0.02 seconds
+Iteration 4 - Total time taken for iteration: 0.42 seconds
+Iteration 5 - Time taken for forward pass: 0.21 seconds
+Iteration 5 - Time taken for backward pass: 0.20 seconds
+Iteration 5 - Time taken for weight update: 0.02 seconds
+Iteration 5 - Total time taken for iteration: 0.43 seconds
+Iteration 6 - Time taken for forward pass: 0.20 seconds
+Iteration 6 - Time taken for backward pass: 0.20 seconds
+Iteration 6 - Time taken for weight update: 0.02 seconds
+Iteration 6 - Total time taken for iteration: 0.43 seconds
+Iteration 7 - Time taken for forward pass: 0.21 seconds
+Iteration 7 - Time taken for backward pass: 0.20 seconds
+Iteration 7 - Time taken for weight update: 0.02 seconds
+Iteration 7 - Total time taken for iteration: 0.44 seconds
+Iteration 8 - Time taken for forward pass: 0.21 seconds
+Iteration 8 - Time taken for backward pass: 0.21 seconds
+Iteration 8 - Time taken for weight update: 0.02 seconds
+Iteration 8 - Total time taken for iteration: 0.43 seconds
+Iteration 9 - Time taken for forward pass: 0.20 seconds
+Iteration 9 - Time taken for backward pass: 0.20 seconds
+Iteration 9 - Time taken for weight update: 0.02 seconds
+Iteration 9 - Total time taken for iteration: 0.42 seconds
+Iteration 10 - Time taken for forward pass: 0.20 seconds
+Iteration 10 - Time taken for backward pass: 0.20 seconds
+Iteration 10 - Time taken for weight update: 0.02 seconds
+Iteration 10 - Total time taken for iteration: 0.42 seconds
+Total training time for 1 epoch with ResNet50 (excluding first iteration): 6.719319581985474
+Running benchmark for GPT-2...
+Starting training for 1 epoch with 10 iterations
+Iteration 2 - Time taken for forward pass: 0.13 seconds
+Iteration 2 - Time taken for backward pass: 0.13 seconds
+Iteration 2 - Time taken for weight update: 0.17 seconds
+Iteration 2 - Total time taken for iteration: 0.43 seconds
+Iteration 3 - Time taken for forward pass: 0.11 seconds
+Iteration 3 - Time taken for backward pass: 0.12 seconds
+Iteration 3 - Time taken for weight update: 0.05 seconds
+Iteration 3 - Total time taken for iteration: 0.28 seconds
+Iteration 4 - Time taken for forward pass: 0.11 seconds
+Iteration 4 - Time taken for backward pass: 0.12 seconds
+Iteration 4 - Time taken for weight update: 0.06 seconds
+Iteration 4 - Total time taken for iteration: 0.29 seconds
+Iteration 5 - Time taken for forward pass: 0.11 seconds
+Iteration 5 - Time taken for backward pass: 0.13 seconds
+Iteration 5 - Time taken for weight update: 0.05 seconds
+Iteration 5 - Total time taken for iteration: 0.29 seconds
+Iteration 6 - Time taken for forward pass: 0.11 seconds
+Iteration 6 - Time taken for backward pass: 0.12 seconds
+Iteration 6 - Time taken for weight update: 0.05 seconds
+Iteration 6 - Total time taken for iteration: 0.28 seconds
+Iteration 7 - Time taken for forward pass: 0.11 seconds
+Iteration 7 - Time taken for backward pass: 0.13 seconds
+Iteration 7 - Time taken for weight update: 0.05 seconds
+Iteration 7 - Total time taken for iteration: 0.29 seconds
+Iteration 8 - Time taken for forward pass: 0.11 seconds
+Iteration 8 - Time taken for backward pass: 0.13 seconds
+Iteration 8 - Time taken for weight update: 0.05 seconds
+Iteration 8 - Total time taken for iteration: 0.28 seconds
+Iteration 9 - Time taken for forward pass: 0.11 seconds
+Iteration 9 - Time taken for backward pass: 0.12 seconds
+Iteration 9 - Time taken for weight update: 0.05 seconds
+Iteration 9 - Total time taken for iteration: 0.28 seconds
+Iteration 10 - Time taken for forward pass: 0.12 seconds
+Iteration 10 - Time taken for backward pass: 0.15 seconds
+Iteration 10 - Time taken for weight update: 0.06 seconds
+Iteration 10 - Total time taken for iteration: 0.33 seconds
+Total training time for 1 epoch with GPT-2 (excluding first iteration): 2.7500905990600586
+Running benchmark for BERT...
+Starting training for 1 epoch with 10 iterations
+Iteration 2 - Time taken for forward pass: 0.12 seconds
+Iteration 2 - Time taken for backward pass: 0.12 seconds
+Iteration 2 - Time taken for weight update: 0.18 seconds
+Iteration 2 - Total time taken for iteration: 0.41 seconds
+Iteration 3 - Time taken for forward pass: 0.11 seconds
+Iteration 3 - Time taken for backward pass: 0.12 seconds
+Iteration 3 - Time taken for weight update: 0.03 seconds
+Iteration 3 - Total time taken for iteration: 0.26 seconds
+Iteration 4 - Time taken for forward pass: 0.11 seconds
+Iteration 4 - Time taken for backward pass: 0.12 seconds
+Iteration 4 - Time taken for weight update: 0.03 seconds
+Iteration 4 - Total time taken for iteration: 0.26 seconds
+Iteration 5 - Time taken for forward pass: 0.14 seconds
+Iteration 5 - Time taken for backward pass: 0.12 seconds
+Iteration 5 - Time taken for weight update: 0.03 seconds
+Iteration 5 - Total time taken for iteration: 0.29 seconds
+Iteration 6 - Time taken for forward pass: 0.11 seconds
+Iteration 6 - Time taken for backward pass: 0.12 seconds
+Iteration 6 - Time taken for weight update: 0.03 seconds
+Iteration 6 - Total time taken for iteration: 0.27 seconds
+Iteration 7 - Time taken for forward pass: 0.13 seconds
+Iteration 7 - Time taken for backward pass: 0.12 seconds
+Iteration 7 - Time taken for weight update: 0.03 seconds
+Iteration 7 - Total time taken for iteration: 0.28 seconds
+Iteration 8 - Time taken for forward pass: 0.12 seconds
+Iteration 8 - Time taken for backward pass: 0.13 seconds
+Iteration 8 - Time taken for weight update: 0.03 seconds
+Iteration 8 - Total time taken for iteration: 0.28 seconds
+Iteration 9 - Time taken for forward pass: 0.12 seconds
+Iteration 9 - Time taken for backward pass: 0.12 seconds
+Iteration 9 - Time taken for weight update: 0.03 seconds
+Iteration 9 - Total time taken for iteration: 0.27 seconds
+Iteration 10 - Time taken for forward pass: 0.11 seconds
+Iteration 10 - Time taken for backward pass: 0.12 seconds
+Iteration 10 - Time taken for weight update: 0.03 seconds
+Iteration 10 - Total time taken for iteration: 0.27 seconds
+Total training time for 1 epoch with BERT (excluding first iteration): 2.6034655570983887
+Running benchmark for RoBERTa...
+Starting training for 1 epoch with 10 iterations
+Iteration 2 - Time taken for forward pass: 0.12 seconds
+Iteration 2 - Time taken for backward pass: 0.12 seconds
+Iteration 2 - Time taken for weight update: 0.19 seconds
+Iteration 2 - Total time taken for iteration: 0.44 seconds
+Iteration 3 - Time taken for forward pass: 0.12 seconds
+Iteration 3 - Time taken for backward pass: 0.12 seconds
+Iteration 3 - Time taken for weight update: 0.04 seconds
+Iteration 3 - Total time taken for iteration: 0.27 seconds
+Iteration 4 - Time taken for forward pass: 0.23 seconds
+Iteration 4 - Time taken for backward pass: 0.15 seconds
+Iteration 4 - Time taken for weight update: 0.04 seconds
+Iteration 4 - Total time taken for iteration: 0.41 seconds
+Iteration 5 - Time taken for forward pass: 0.12 seconds
+Iteration 5 - Time taken for backward pass: 0.12 seconds
+Iteration 5 - Time taken for weight update: 0.03 seconds
+Iteration 5 - Total time taken for iteration: 0.27 seconds
+Iteration 6 - Time taken for forward pass: 0.12 seconds
+Iteration 6 - Time taken for backward pass: 0.12 seconds
+Iteration 6 - Time taken for weight update: 0.03 seconds
+Iteration 6 - Total time taken for iteration: 0.27 seconds
+Iteration 7 - Time taken for forward pass: 0.12 seconds
+Iteration 7 - Time taken for backward pass: 0.12 seconds
+Iteration 7 - Time taken for weight update: 0.03 seconds
+Iteration 7 - Total time taken for iteration: 0.27 seconds
+Iteration 8 - Time taken for forward pass: 0.12 secondsYou are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+All PyTorch model weights were used when initializing TFT5ForConditionalGeneration.
+
+All the weights of TFT5ForConditionalGeneration were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFT5ForConditionalGeneration for predictions without further training.
+Some weights of the PyTorch model were not used when initializing the TF 2.0 model TFDistilBertModel: ['vocab_layer_norm.weight', 'vocab_layer_norm.bias', 'vocab_transform.weight', 'vocab_projector.bias', 'vocab_transform.bias']
+- This IS expected if you are initializing TFDistilBertModel from a PyTorch model trained on another task or with another architecture (e.g. initializing a TFBertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing TFDistilBertModel from a PyTorch model that you expect to be exactly identical (e.g. initializing a TFBertForSequenceClassification model from a BertForSequenceClassification model).
+All the weights of TFDistilBertModel were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDistilBertModel for predictions without further training.
+
+Iteration 8 - Time taken for backward pass: 0.12 seconds
+Iteration 8 - Time taken for weight update: 0.03 seconds
+Iteration 8 - Total time taken for iteration: 0.27 seconds
+Iteration 9 - Time taken for forward pass: 0.12 seconds
+Iteration 9 - Time taken for backward pass: 0.12 seconds
+Iteration 9 - Time taken for weight update: 0.03 seconds
+Iteration 9 - Total time taken for iteration: 0.27 seconds
+Iteration 10 - Time taken for forward pass: 0.12 seconds
+Iteration 10 - Time taken for backward pass: 0.11 seconds
+Iteration 10 - Time taken for weight update: 0.04 seconds
+Iteration 10 - Total time taken for iteration: 0.27 seconds
+Total training time for 1 epoch with RoBERTa (excluding first iteration): 2.724778652191162
+Running benchmark for T5...
+Starting training for 1 epoch with 10 iterations
+Iteration 2 - Time taken for forward pass: 0.15 seconds
+Iteration 2 - Time taken for backward pass: 0.10 seconds
+Iteration 2 - Time taken for weight update: 0.14 seconds
+Iteration 2 - Total time taken for iteration: 0.38 seconds
+Iteration 3 - Time taken for forward pass: 0.14 seconds
+Iteration 3 - Time taken for backward pass: 0.10 seconds
+Iteration 3 - Time taken for weight update: 0.04 seconds
+Iteration 3 - Total time taken for iteration: 0.28 seconds
+Iteration 4 - Time taken for forward pass: 0.14 seconds
+Iteration 4 - Time taken for backward pass: 0.10 seconds
+Iteration 4 - Time taken for weight update: 0.04 seconds
+Iteration 4 - Total time taken for iteration: 0.27 seconds
+Iteration 5 - Time taken for forward pass: 0.14 seconds
+Iteration 5 - Time taken for backward pass: 0.10 seconds
+Iteration 5 - Time taken for weight update: 0.04 seconds
+Iteration 5 - Total time taken for iteration: 0.28 seconds
+Iteration 6 - Time taken for forward pass: 0.14 seconds
+Iteration 6 - Time taken for backward pass: 0.10 seconds
+Iteration 6 - Time taken for weight update: 0.04 seconds
+Iteration 6 - Total time taken for iteration: 0.27 seconds
+Iteration 7 - Time taken for forward pass: 0.14 seconds
+Iteration 7 - Time taken for backward pass: 0.10 seconds
+Iteration 7 - Time taken for weight update: 0.04 seconds
+Iteration 7 - Total time taken for iteration: 0.27 seconds
+Iteration 8 - Time taken for forward pass: 0.14 seconds
+Iteration 8 - Time taken for backward pass: 0.10 seconds
+Iteration 8 - Time taken for weight update: 0.04 seconds
+Iteration 8 - Total time taken for iteration: 0.27 seconds
+Iteration 9 - Time taken for forward pass: 0.14 seconds
+Iteration 9 - Time taken for backward pass: 0.10 seconds
+Iteration 9 - Time taken for weight update: 0.04 seconds
+Iteration 9 - Total time taken for iteration: 0.28 seconds
+Iteration 10 - Time taken for forward pass: 0.14 seconds
+Iteration 10 - Time taken for backward pass: 0.10 seconds
+Iteration 10 - Time taken for weight update: 0.04 seconds
+Iteration 10 - Total time taken for iteration: 0.28 seconds
+Total training time for 1 epoch with T5 (excluding first iteration): 2.5931081771850586
+Running benchmark for DistilBERT...
+Starting training for 1 epoch with 10 iterations
+Iteration 2 - Time taken for forward pass: 0.06 seconds
+Iteration 2 - Time taken for backward pass: 0.06 seconds
+Iteration 2 - Time taken for weight update: 0.10 seconds
+Iteration 2 - Total time taken for iteration: 0.22 seconds
+Iteration 3 - Time taken for forward pass: 0.06 seconds
+Iteration 3 - Time taken for backward pass: 0.06 seconds
+Iteration 3 - Time taken for weight update: 0.02 seconds
+Iteration 3 - Total time taken for iteration: 0.14 seconds
+Iteration 4 - Time taken for forward pass: 0.06 seconds
+Iteration 4 - Time taken for backward pass: 0.06 seconds
+Iteration 4 - Time taken for weight update: 0.02 seconds
+Iteration 4 - Total time taken for iteration: 0.14 seconds
+Iteration 5 - Time taken for forward pass: 0.06 seconds
+Iteration 5 - Time taken for backward pass: 0.06 seconds
+Iteration 5 - Time taken for weight update: 0.02 seconds
+Iteration 5 - Total time taken for iteration: 0.14 seconds
+Iteration 6 - Time taken for forward pass: 0.06 seconds
+Iteration 6 - Time taken for backward pass: 0.06 seconds
+Iteration 6 - Time taken for weight update: 0.02 seconds
+Iteration 6 - Total time taken for iteration: 0.14 seconds
+Iteration 7 - Time taken for forward pass: 0.06 seconds
+Iteration 7 - Time taken for backward pass: 0.06 seconds
+Iteration 7 - Time taken for weight update: 0.02 seconds
+Iteration 7 - Total time taken for iteration: 0.14 seconds
+Iteration 8 - Time taken for forward pass: 0.06 seconds
+Iteration 8 - Time taken for backward pass: 0.06 seconds
+Iteration 8 - Time taken for weight update: 0.02 seconds
+Iteration 8 - Total time taken for iteration: 0.14 seconds
+Iteration 9 - Time taken for forward pass: 0.06 seconds
+Iteration 9 - Time taken for backward pass: 0.06 seconds
+Iteration 9 - Time taken for weight update: 0.02 seconds
+Iteration 9 - Total time taken for iteration: 0.14 seconds
+Iteration 10 - Time taken for forward pass: 0.06 seconds
+Iteration 10 - Time taken for backward pass: 0.06 seconds
+Iteration 10 - Time taken for weight update: 0.02 seconds
+Iteration 10 - Total time taken for iteration: 0.14 seconds
+Total training time for 1 epoch with DistilBERT (excluding first iteration): 1.3294711112976074
+Benchmark results saved to result5.txt

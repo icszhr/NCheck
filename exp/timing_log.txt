@@ -1,0 +1,12 @@
+Iteration 0 - Total time: 13.5508s
+  Forward pass time: 0.0000s
+  Backward pass time: 0.0000s
+  Weight update time: 0.0000s
+  Checkpoint (GPU to CPU) time: 0.5037s
+  Checkpoint (CPU to File) time: 1.2265s
+Iteration 1 - Total time: 0.3180s
+  Forward pass time: 0.0000s
+  Backward pass time: 0.0000s
+  Weight update time: 0.0000s
+  Checkpoint (GPU to CPU) time: 0.3283s
+  Checkpoint (CPU to File) time: 0.9848s

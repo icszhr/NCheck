@@ -1,0 +1,62 @@
+No checkpoint found, starting from scratch.
+Epoch 1/10
+1/4 [======>.......................] - ETA: 51s - loss: nan2/4 [==============>...............] - ETA: 0s - loss: nan 3/4 [=====================>........] - ETA: 0s - loss: nan4/4 [==============================] - ETA: 0s - loss: nan4/4 [==============================] - 18s 93ms/step - loss: nan
+Epoch 1 - loss: nan, Time taken: 17.59 seconds
+Time to transfer weights from GPU to CPU: 0.45 seconds
+Time to persist weights from CPU to disk: 1.50 seconds
+Total Time taken to save checkpoint 1: 1.94 seconds
+Epoch 2/10
+1/4 [======>.......................] - ETA: 0s - loss: nan2/4 [==============>...............] - ETA: 0s - loss: nan3/4 [=====================>........] - ETA: 0s - loss: nan4/4 [==============================] - ETA: 0s - loss: nan4/4 [==============================] - 0s 95ms/step - loss: nan
+Epoch 1 - loss: nan, Time taken: 0.38 seconds
+Time to transfer weights from GPU to CPU: 0.28 seconds
+Time to persist weights from CPU to disk: 1.47 seconds
+Total Time taken to save checkpoint 1: 1.75 seconds
+Epoch 3/10
+1/4 [======>.......................] - ETA: 0s - loss: nan2/4 [==============>...............] - ETA: 0s - loss: nan3/4 [=====================>........] - ETA: 0s - loss: nan4/4 [==============================] - ETA: 0s - loss: nan4/4 [==============================] - 0s 93ms/step - loss: nan
+Epoch 1 - loss: nan, Time taken: 0.37 seconds
+Time to transfer weights from GPU to CPU: 0.28 seconds
+Time to persist weights from CPU to disk: 1.89 seconds
+Total Time taken to save checkpoint 1: 2.18 seconds
+Epoch 4/10
+1/4 [======>.......................] - ETA: 0s - loss: nan2/4 [==============>...............] - ETA: 0s - loss: nan3/4 [=====================>........] - ETA: 0s - loss: nan4/4 [==============================] - ETA: 0s - loss: nan4/4 [==============================] - 0s 95ms/step - loss: nan
+Epoch 1 - loss: nan, Time taken: 0.38 seconds
+Time to transfer weights from GPU to CPU: 0.29 seconds
+Time to persist weights from CPU to disk: 2.56 seconds
+Total Time taken to save checkpoint 1: 2.84 seconds
+Epoch 5/10
+1/4 [======>.......................] - ETA: 0s - loss: nan2/4 [==============>...............] - ETA: 0s - loss: nan3/4 [=====================>........] - ETA: 0s - loss: nan4/4 [==============================] - ETA: 0s - loss: nan4/4 [==============================] - 0s 92ms/step - loss: nan
+Epoch 1 - loss: nan, Time taken: 0.37 seconds
+Time to transfer weights from GPU to CPU: 0.38 seconds
+Time to persist weights from CPU to disk: 2.21 seconds
+Total Time taken to save checkpoint 1: 2.59 seconds
+Epoch 6/10
+1/4 [======>.......................] - ETA: 0s - loss: nan2/4 [==============>...............] - ETA: 0s - loss: nan3/4 [=====================>........] - ETA: 0s - loss: nan4/4 [==============================] - ETA: 0s - loss: nan4/4 [==============================] - 0s 94ms/step - loss: nan
+Epoch 1 - loss: nan, Time taken: 0.38 seconds
+Time to transfer weights from GPU to CPU: 0.26 seconds
+Time to persist weights from CPU to disk: 2.21 seconds
+Total Time taken to save checkpoint 1: 2.47 seconds
+Epoch 7/10
+1/4 [======>.......................] - ETA: 0s - loss: nan2/4 [==============>...............] - ETA: 0s - loss: nan3/4 [=====================>........] - ETA: 0s - loss: nan4/4 [==============================] - ETA: 0s - loss: nan4/4 [==============================] - 0s 95ms/step - loss: nan
+Epoch 1 - loss: nan, Time taken: 0.38 seconds
+Time to transfer weights from GPU to CPU: 0.33 seconds
+Time to persist weights from CPU to disk: 2.04 seconds
+Total Time taken to save checkpoint 1: 2.36 seconds
+Epoch 8/10
+1/4 [======>.......................] - ETA: 0s - loss: nan2/4 [==============>...............] - ETA: 0s - loss: nan3/4 [=====================>........] - ETA: 0s - loss: nan4/4 [==============================] - ETA: 0s - loss: nan4/4 [==============================] - 0s 92ms/step - loss: nan
+Epoch 1 - loss: nan, Time taken: 0.37 seconds
+Time to transfer weights from GPU to CPU: 0.33 seconds
+Time to persist weights from CPU to disk: 2.18 seconds
+Total Time taken to save checkpoint 1: 2.51 seconds
+Epoch 9/10
+1/4 [======>.......................] - ETA: 0s - loss: nan2/4 [==============>...............] - ETA: 0s - loss: nan3/4 [=====================>........] - ETA: 0s - loss: nan4/4 [==============================] - ETA: 0s - loss: nan4/4 [==============================] - 0s 95ms/step - loss: nan
+Epoch 1 - loss: nan, Time taken: 0.38 seconds
+Time to transfer weights from GPU to CPU: 0.33 seconds
+Time to persist weights from CPU to disk: 2.04 seconds
+Total Time taken to save checkpoint 1: 2.37 seconds
+Epoch 10/10
+1/4 [======>.......................] - ETA: 0s - loss: nan2/4 [==============>...............] - ETA: 0s - loss: nan3/4 [=====================>........] - ETA: 0s - loss: nan4/4 [==============================] - ETA: 0s - loss: nan4/4 [==============================] - 0s 95ms/step - loss: nan
+Epoch 1 - loss: nan, Time taken: 0.38 seconds
+Time to transfer weights from GPU to CPU: 0.33 seconds
+Time to persist weights from CPU to disk: 1.91 seconds
+Total Time taken to save checkpoint 1: 2.24 seconds
+Total training time: 45.07191300392151

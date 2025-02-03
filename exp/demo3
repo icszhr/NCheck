@@ -1,0 +1,129 @@
+Loading checkpoint from: /pmem/zhr/checkpoints/epoch_1.ckpt
+Time taken to load checkpoint: 8.46 seconds
+Epoch 1/10
+
+1/4 [======>.......................] - ETA: 2:40 - loss: 0.3823
+2/4 [==============>...............] - ETA: 0s - loss: 0.3147  
+3/4 [=====================>........] - ETA: 0s - loss: 0.3046
+4/4 [==============================] - ETA: 0s - loss: 0.2925
+4/4 [==============================] - 54s 271ms/step - loss: 0.2925
+Epoch 1 - loss: 0.2925, Time taken: 54.40 seconds
+Time to transfer weights from GPU to CPU: 1.49 seconds
+Time to persist weights from CPU to disk: 2.71 seconds
+Total Time taken to save checkpoint 1: 4.20 seconds
+Epoch 2/10
+
+1/4 [======>.......................] - ETA: 0s - loss: 0.3578
+2/4 [==============>...............] - ETA: 0s - loss: 0.3096
+3/4 [=====================>........] - ETA: 0s - loss: 0.3129
+4/4 [==============================] - ETA: 0s - loss: 0.3214
+4/4 [==============================] - 1s 266ms/step - loss: 0.3214
+Epoch 1 - loss: 0.3214, Time taken: 1.07 seconds
+Time to transfer weights from GPU to CPU: 1.20 seconds
+Time to persist weights from CPU to disk: 2.69 seconds
+Total Time taken to save checkpoint 1: 3.89 seconds
+Epoch 3/10
+
+1/4 [======>.......................] - ETA: 0s - loss: 0.1748
+2/4 [==============>...............] - ETA: 0s - loss: 0.2222
+3/4 [=====================>........] - ETA: 0s - loss: 0.2189
+4/4 [==============================] - ETA: 0s - loss: 0.2226
+4/4 [==============================] - 1s 265ms/step - loss: 0.2226
+Epoch 1 - loss: 0.2226, Time taken: 1.07 seconds
+Time to transfer weights from GPU to CPU: 1.32 seconds
+Time to persist weights from CPU to disk: 2.70 seconds
+Total Time taken to save checkpoint 1: 4.02 seconds
+Epoch 4/10
+
+1/4 [======>.......................] - ETA: 0s - loss: 0.2856
+2/4 [==============>...............] - ETA: 0s - loss: 0.3109
+3/4 [=====================>........] - ETA: 0s - loss: 0.2967
+4/4 [==============================] - ETA: 0s - loss: 0.2852
+4/4 [==============================] - 1s 278ms/step - loss: 0.2852
+Epoch 1 - loss: 0.2852, Time taken: 1.10 seconds
+Time to transfer weights from GPU to CPU: 1.19 seconds
+Time to persist weights from CPU to disk: 2.72 seconds
+Total Time taken to save checkpoint 1: 3.90 seconds
+Epoch 5/10
+
+1/4 [======>.......................] - ETA: 0s - loss: 0.1571
+2/4 [==============>...............] - ETA: 0s - loss: 0.1903
+3/4 [=====================>........] - ETA: 0s - loss: 0.1989
+4/4 [==============================] - ETA: 0s - loss: 0.1916
+4/4 [==============================] - 1s 271ms/step - loss: 0.1916
+Epoch 1 - loss: 0.1916, Time taken: 1.08 seconds
+Time to transfer weights from GPU to CPU: 1.20 seconds
+Time to persist weights from CPU to disk: 2.70 seconds
+Total Time taken to save checkpoint 1: 3.89 seconds
+Epoch 6/10
+
+1/4 [======>.......................] - ETA: 0s - loss: 0.2037
+2/4 [==============>...............] - ETA: 0s - loss: 0.1882
+3/4 [=====================>........] - ETA: 0s - loss: 0.2257
+4/4 [==============================] - ETA: 0s - loss: 0.2372
+4/4 [==============================] - 1s 267ms/step - loss: 0.2372
+Epoch 1 - loss: 0.2372, Time taken: 1.07 seconds
+Time to transfer weights from GPU to CPU: 1.34 seconds
+Time to persist weights from CPU to disk: 2.69 seconds
+Total Time taken to save checkpoint 1: 4.03 seconds
+Epoch 7/10
+
+1/4 [======>.......................] - ETA: 0s - loss: 0.2536
+2/4 [==============>...............] - ETA: 0s - loss: 0.2041
+3/4 [=====================>........] - ETA: 0s - loss: 0.2243
+4/4 [==============================] - ETA: 0s - loss: 0.2162
+4/4 [==============================] - 1s 266ms/step - loss: 0.2162
+Epoch 1 - loss: 0.2162, Time taken: 1.07 seconds
+Time to transfer weights from GPU to CPU: 1.34 seconds
+Time to persist weights from CPU to disk: 2.70 seconds
+Total Time taken to save checkpoint 1: 4.04 seconds
+Epoch 8/10
+
+1/4 [======>.......................] - ETA: 0s - loss: 0.2360
+2/4 [==============>...............] - ETA: 0s - loss: 0.2298
+3/4 [=====================>........] - ETA: 0s - loss: 0.2332
+4/4 [==============================] - ETA: 0s - loss: 0.2242
+4/4 [==============================] - 1s 268ms/step - loss: 0.2242
+Epoch 1 - loss: 0.2242, Time taken: 1.08 seconds
+Time to transfer weights from GPU to CPU: 1.35 seconds
+Time to persist weights from CPU to disk: 2.68 seconds
+Total Time taken to save checkpoint 1: 4.03 seconds
+Epoch 9/10
+
+1/4 [======>.......................] - ETA: 0s - loss: 0.1700
+2/4 [==============>...............] - ETA: 0s - loss: 0.1784
+3/4 [=====================>........] - ETA: 0s - loss: 0.2033
+4/4 [==============================] - ETA: 0s - loss: 0.1962
+4/4 [==============================] - 1s 268ms/step - loss: 0.1962
+Epoch 1 - loss: 0.1962, Time taken: 1.08 seconds
+Time to transfer weights from GPU to CPU: 1.35 seconds
+Time to persist weights from CPU to disk: 2.72 seconds
+Total Time taken to save checkpoint 1: 4.07 seconds
+Epoch 10/10
+
+1/4 [======>.......................] - ETA: 0s - loss: 0.2232
+2/4 [==============>...............] - ETA: 0s - loss: 0.2271
+3/4 [=====================>........] - ETA: 0s - loss: 0.1888
+4/4 [==============================] - ETA: 0s - loss: 0.1925
+4/4 [==============================] - 1s 265ms/step - loss: 0.1925
+Epoch 1 - loss: 0.1925, Time taken: 1.07 seconds
+Time to transfer weights from GPU to CPU: 1.37 seconds
+Time to persist weights from CPU to disk: 2.72 seconds
+Total Time taken to save checkpoint 1: 4.09 seconds
+Total training time: 105.87127733230591
+
+Forward propagation time: 2.0233 seconds
+Backward propagation time: 1.5455 seconds
+Weight update time: 0.4262 seconds
+
+Forward propagation time: 1.6535 seconds
+Backward propagation time: 1.6437 seconds
+Weight update time: 0.5968 seconds
+
+Forward propagation time: 5.9039 seconds
+Backward propagation time: 5.6041 seconds
+Weight update time: 2.5041 seconds
+
+Forward propagation time: 2.4280 seconds
+Backward propagation time: 2.3102 seconds
+Weight update time: 1.1062 seconds

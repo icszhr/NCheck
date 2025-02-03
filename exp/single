@@ -1,0 +1,424 @@
+/home/zhr/anaconda3/envs/tf2.6/lib/python3.9/site-packages/huggingface_hub/utils/_runtime.py:184: UserWarning: Pydantic is installed but cannot be imported. Please check your installation. `huggingface_hub` will default to not using Pydantic. Error message: '{e}'
+  warnings.warn(
+All PyTorch model weights were used when initializing TFGPT2LMHeadModel.
+
+All the weights of TFGPT2LMHeadModel were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFGPT2LMHeadModel for predictions without further training.
+Some weights of the PyTorch model were not used when initializing the TF 2.0 model TFBertModel: ['cls.seq_relationship.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing TFBertModel from a PyTorch model trained on another task or with another architecture (e.g. initializing a TFBertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing TFBertModel from a PyTorch model that you expect to be exactly identical (e.g. initializing a TFBertForSequenceClassification model from a BertForSequenceClassification model).
+All the weights of TFBertModel were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFBertModel for predictions without further training.
+Running benchmark for ResNet50...
+Starting training for 1 epoch with 10 iterations
+Iteration 2 - Time taken for forward pass: 2.45 seconds
+Iteration 2 - Time taken for backward pass: 0.32 seconds
+Iteration 2 - Time taken for weight update: 0.19 seconds
+Iteration 2 - Total time taken for iteration: 2.96 seconds
+Iteration 2 - Time to transfer weights from GPU to CPU: 0.14 seconds
+Iteration 2 - Time to persist weights from CPU to disk: 0.68 seconds
+Iteration 2 - Total Time taken to save checkpoint: 0.82 seconds
+Iteration 3 - Time taken for forward pass: 0.07 seconds
+Iteration 3 - Time taken for backward pass: 0.04 seconds
+Iteration 3 - Time taken for weight update: 0.02 seconds
+Iteration 3 - Total time taken for iteration: 0.13 seconds
+Iteration 3 - Time to transfer weights from GPU to CPU: 0.09 seconds
+Iteration 3 - Time to persist weights from CPU to disk: 0.65 seconds
+Iteration 3 - Total Time taken to save checkpoint: 0.74 seconds
+Iteration 4 - Time taken for forward pass: 0.06 seconds
+Iteration 4 - Time taken for backward pass: 0.04 seconds
+Iteration 4 - Time taken for weight update: 0.02 seconds
+Iteration 4 - Total time taken for iteration: 0.13 seconds
+Iteration 4 - Time to transfer weights from GPU to CPU: 0.09 seconds
+Iteration 4 - Time to persist weights from CPU to disk: 0.76 seconds
+Iteration 4 - Total Time taken to save checkpoint: 0.85 seconds
+Iteration 5 - Time taken for forward pass: 0.06 seconds
+Iteration 5 - Time taken for backward pass: 0.04 seconds
+Iteration 5 - Time taken for weight update: 0.02 seconds
+Iteration 5 - Total time taken for iteration: 0.13 seconds
+Iteration 5 - Time to transfer weights from GPU to CPU: 0.09 seconds
+Iteration 5 - Time to persist weights from CPU to disk: 0.61 seconds
+Iteration 5 - Total Time taken to save checkpoint: 0.70 seconds
+Iteration 6 - Time taken for forward pass: 0.06 seconds
+Iteration 6 - Time taken for backward pass: 0.04 seconds
+Iteration 6 - Time taken for weight update: 0.02 seconds
+Iteration 6 - Total time taken for iteration: 0.13 seconds
+Iteration 6 - Time to transfer weights from GPU to CPU: 0.08 seconds
+Iteration 6 - Time to persist weights from CPU to disk: 0.43 seconds
+Iteration 6 - Total Time taken to save checkpoint: 0.51 seconds
+Iteration 7 - Time taken for forward pass: 0.06 seconds
+Iteration 7 - Time taken for backward pass: 0.04 seconds
+Iteration 7 - Time taken for weight update: 0.02 seconds
+Iteration 7 - Total time taken for iteration: 0.13 seconds
+Iteration 7 - Time to transfer weights from GPU to CPU: 0.09 seconds
+Iteration 7 - Time to persist weights from CPU to disk: 0.61 seconds
+Iteration 7 - Total Time taken to save checkpoint: 0.70 seconds
+Iteration 8 - Time taken for forward pass: 0.06 seconds
+Iteration 8 - Time taken for backward pass: 0.04 seconds
+Iteration 8 - Time taken for weight update: 0.02 seconds
+Iteration 8 - Total time taken for iteration: 0.13 seconds
+Iteration 8 - Time to transfer weights from GPU to CPU: 0.09 seconds
+Iteration 8 - Time to persist weights from CPU to disk: 0.61 seconds
+Iteration 8 - Total Time taken to save checkpoint: 0.69 seconds
+Iteration 9 - Time taken for forward pass: 0.06 seconds
+Iteration 9 - Time taken for backward pass: 0.04 seconds
+Iteration 9 - Time taken for weight update: 0.02 seconds
+Iteration 9 - Total time taken for iteration: 0.13 seconds
+Iteration 9 - Time to transfer weights from GPU to CPU: 0.09 seconds
+Iteration 9 - Time to persist weights from CPU to disk: 0.77 seconds
+Iteration 9 - Total Time taken to save checkpoint: 0.86 seconds
+Iteration 10 - Time taken for forward pass: 0.06 seconds
+Iteration 10 - Time taken for backward pass: 0.04 seconds
+Iteration 10 - Time taken for weight update: 0.02 seconds
+Iteration 10 - Total time taken for iteration: 0.13 seconds
+Iteration 10 - Time to transfer weights from GPU to CPU: 0.09 seconds
+Iteration 10 - Time to persist weights from CPU to disk: 0.38 seconds
+Iteration 10 - Total Time taken to save checkpoint: 0.47 seconds
+Total training time for 1 epoch with ResNet50 (excluding first iteration): 3.9801316261291504
+Running benchmark for GPT-2...
+Starting training for 1 epoch with 10 iterations
+Iteration 2 - Time taken for forward pass: 0.10 seconds
+Iteration 2 - Time taken for backward pass: 0.11 seconds
+Iteration 2 - Time taken for weight update: 0.14 seconds
+Iteration 2 - Total time taken for iteration: 0.35 seconds
+Iteration 2 - Time to transfer weights from GPU to CPU: 0.45 seconds
+Iteration 2 - Time to persist weights from CPU to disk: 2.79 seconds
+Iteration 2 - Total Time taken to save checkpoint: 3.25 seconds
+Iteration 3 - Time taken for forward pass: 0.11 seconds
+Iteration 3 - Time taken for backward pass: 0.11 seconds
+Iteration 3 - Time taken for weight update: 0.02 seconds
+Iteration 3 - Total time taken for iteration: 0.24 seconds
+Iteration 3 - Time to transfer weights from GPU to CPU: 0.30 seconds
+Iteration 3 - Time to persist weights from CPU to disk: 2.31 seconds
+Iteration 3 - Total Time taken to save checkpoint: 2.61 seconds
+Iteration 4 - Time taken for forward pass: 0.14 seconds
+Iteration 4 - Time taken for backward pass: 0.11 seconds
+Iteration 4 - Time taken for weight update: 0.02 seconds
+Iteration 4 - Total time taken for iteration: 0.27 seconds
+Iteration 4 - Time to transfer weights from GPU to CPU: 0.30 seconds
+Iteration 4 - Time to persist weights from CPU to disk: 2.79 seconds
+Iteration 4 - Total Time taken to save checkpoint: 3.08 seconds
+Iteration 5 - Time taken for forward pass: 0.11 seconds
+Iteration 5 - Time taken for backward pass: 0.11 seconds
+Iteration 5 - Time taken for weight update: 0.02 seconds
+Iteration 5 - Total time taken for iteration: 0.25 seconds
+Iteration 5 - Time to transfer weights from GPU to CPU: 0.30 seconds
+Iteration 5 - Time to persist weights from CPU to disk: 1.98 seconds
+Iteration 5 - Total Time taken to save checkpoint: 2.28 seconds
+Iteration 6 - Time taken for forward pass: 0.11 seconds
+Iteration 6 - Time taken for backward pass: 0.11 seconds
+Iteration 6 - Time taken for weight update: 0.02 seconds
+Iteration 6 - Total time taken for iteration: 0.24 seconds
+Iteration 6 - Time to transfer weights from GPU to CPU: 0.30 seconds
+Iteration 6 - Time to persist weights from CPU to disk: 1.95 seconds
+Iteration 6 - Total Time taken to save checkpoint: 2.25 seconds
+Iteration 7 - Time taken for forward pass: 0.11 seconds
+Iteration 7 - Time taken for backward pass: 0.11 seconds
+Iteration 7 - Time taken for weight update: 0.02 seconds
+Iteration 7 - Total time taken for iteration: 0.24 seconds
+Iteration 7 - Time to transfer weights from GPU to CPU: 0.29 seconds
+Iteration 7 - Time to persist weights from CPU to disk: 1.67 seconds
+Iteration 7 - Total Time taken to save checkpoint: 1.96 seconds
+Iteration 8 - Time taken for forward pass: 0.10 seconds
+Iteration 8 - Time taken for backward pass: 0.11 seconds
+Iteration 8 - Time taken for weight update: 0.02 seconds
+Iteration 8 - Total time taken for iteration: 0.23 seconds
+Iteration 8 - Time to transfer weights from GPU to CPU: 0.29 seconds
+Iteration 8 - Time to persist weights from CPU to disk: 1.83 seconds
+Iteration 8 - Total Time taken to save checkpoint: 2.11 seconds
+Iteration 9 - Time taken for forward pass: 0.11 seconds
+Iteration 9 - Time taken for backward pass: 0.12 seconds
+Iteration 9 - Time taken for weight update: 0.02 seconds
+Iteration 9 - Total time taken for iteration: 0.25 seconds
+Iteration 9 - Time to transfer weights from GPU to CPU: 0.30 seconds
+Iteration 9 - Time to persist weights from CPU to disk: 1.82 seconds
+Iteration 9 - Total Time taken to save checkpoint: 2.12 seconds
+Iteration 10 - Time taken for forward pass: 0.11 seconds
+Iteration 10 - Time taken for backward pass: 0.11 seconds
+Iteration 10 - Time taken for weight update: 0.02 seconds
+Iteration 10 - Total time taken for iteration: 0.24 seconds
+Iteration 10 - Time to transfer weights from GPU to CPU: 0.30 seconds
+Iteration 10 - Time to persist weights from CPU to disk: 2.04 seconds
+Iteration 10 - Total Time taken to save checkpoint: 2.34 seconds
+Total training time for 1 epoch with GPT-2 (excluding first iteration): 2.310589551925659
+Running benchmark for BERT...
+Starting training for 1 epoch with 10 iterationsSome weights of the PyTorch model were not used when initializing the TF 2.0 model TFRobertaModel: ['lm_head.dense.weight', 'lm_head.bias', 'lm_head.layer_norm.weight', 'roberta.embeddings.position_ids', 'lm_head.layer_norm.bias', 'lm_head.dense.bias']
+- This IS expected if you are initializing TFRobertaModel from a PyTorch model trained on another task or with another architecture (e.g. initializing a TFBertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing TFRobertaModel from a PyTorch model that you expect to be exactly identical (e.g. initializing a TFBertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights or buffers of the TF 2.0 model TFRobertaModel were not initialized from the PyTorch model and are newly initialized: ['roberta.pooler.dense.weight', 'roberta.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+All PyTorch model weights were used when initializing TFT5ForConditionalGeneration.
+
+All the weights of TFT5ForConditionalGeneration were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFT5ForConditionalGeneration for predictions without further training.
+
+Iteration 2 - Time taken for forward pass: 0.11 seconds
+Iteration 2 - Time taken for backward pass: 0.11 seconds
+Iteration 2 - Time taken for weight update: 0.18 seconds
+Iteration 2 - Total time taken for iteration: 0.40 seconds
+Iteration 2 - Time to transfer weights from GPU to CPU: 0.27 seconds
+Iteration 2 - Time to persist weights from CPU to disk: 2.26 seconds
+Iteration 2 - Total Time taken to save checkpoint: 2.53 seconds
+Iteration 3 - Time taken for forward pass: 0.12 seconds
+Iteration 3 - Time taken for backward pass: 0.11 seconds
+Iteration 3 - Time taken for weight update: 0.03 seconds
+Iteration 3 - Total time taken for iteration: 0.26 seconds
+Iteration 3 - Time to transfer weights from GPU to CPU: 0.28 seconds
+Iteration 3 - Time to persist weights from CPU to disk: 2.68 seconds
+Iteration 3 - Total Time taken to save checkpoint: 2.96 seconds
+Iteration 4 - Time taken for forward pass: 0.12 seconds
+Iteration 4 - Time taken for backward pass: 0.11 seconds
+Iteration 4 - Time taken for weight update: 0.04 seconds
+Iteration 4 - Total time taken for iteration: 0.27 seconds
+Iteration 4 - Time to transfer weights from GPU to CPU: 0.28 seconds
+Iteration 4 - Time to persist weights from CPU to disk: 2.24 seconds
+Iteration 4 - Total Time taken to save checkpoint: 2.53 seconds
+Iteration 5 - Time taken for forward pass: 0.12 seconds
+Iteration 5 - Time taken for backward pass: 0.14 seconds
+Iteration 5 - Time taken for weight update: 0.04 seconds
+Iteration 5 - Total time taken for iteration: 0.30 seconds
+Iteration 5 - Time to transfer weights from GPU to CPU: 0.34 seconds
+Iteration 5 - Time to persist weights from CPU to disk: 2.33 seconds
+Iteration 5 - Total Time taken to save checkpoint: 2.68 seconds
+Iteration 6 - Time taken for forward pass: 0.12 seconds
+Iteration 6 - Time taken for backward pass: 0.11 seconds
+Iteration 6 - Time taken for weight update: 0.03 seconds
+Iteration 6 - Total time taken for iteration: 0.26 seconds
+Iteration 6 - Time to transfer weights from GPU to CPU: 0.28 seconds
+Iteration 6 - Time to persist weights from CPU to disk: 2.40 seconds
+Iteration 6 - Total Time taken to save checkpoint: 2.68 seconds
+Iteration 7 - Time taken for forward pass: 0.12 seconds
+Iteration 7 - Time taken for backward pass: 0.11 seconds
+Iteration 7 - Time taken for weight update: 0.03 seconds
+Iteration 7 - Total time taken for iteration: 0.26 seconds
+Iteration 7 - Time to transfer weights from GPU to CPU: 0.28 seconds
+Iteration 7 - Time to persist weights from CPU to disk: 1.54 seconds
+Iteration 7 - Total Time taken to save checkpoint: 1.81 seconds
+Iteration 8 - Time taken for forward pass: 0.11 seconds
+Iteration 8 - Time taken for backward pass: 0.11 seconds
+Iteration 8 - Time taken for weight update: 0.03 seconds
+Iteration 8 - Total time taken for iteration: 0.26 seconds
+Iteration 8 - Time to transfer weights from GPU to CPU: 0.28 seconds
+Iteration 8 - Time to persist weights from CPU to disk: 1.89 seconds
+Iteration 8 - Total Time taken to save checkpoint: 2.16 seconds
+Iteration 9 - Time taken for forward pass: 0.11 seconds
+Iteration 9 - Time taken for backward pass: 0.11 seconds
+Iteration 9 - Time taken for weight update: 0.03 seconds
+Iteration 9 - Total time taken for iteration: 0.25 seconds
+Iteration 9 - Time to transfer weights from GPU to CPU: 0.28 seconds
+Iteration 9 - Time to persist weights from CPU to disk: 2.07 seconds
+Iteration 9 - Total Time taken to save checkpoint: 2.34 seconds
+Iteration 10 - Time taken for forward pass: 0.12 seconds
+Iteration 10 - Time taken for backward pass: 0.11 seconds
+Iteration 10 - Time taken for weight update: 0.03 seconds
+Iteration 10 - Total time taken for iteration: 0.27 seconds
+Iteration 10 - Time to transfer weights from GPU to CPU: 0.27 seconds
+Iteration 10 - Time to persist weights from CPU to disk: 2.21 seconds
+Iteration 10 - Total Time taken to save checkpoint: 2.48 seconds
+Total training time for 1 epoch with BERT (excluding first iteration): 2.523594617843628
+Running benchmark for RoBERTa...
+Starting training for 1 epoch with 10 iterations
+Iteration 2 - Time taken for forward pass: 0.23 seconds
+Iteration 2 - Time taken for backward pass: 0.11 seconds
+Iteration 2 - Time taken for weight update: 0.18 seconds
+Iteration 2 - Total time taken for iteration: 0.51 seconds
+Iteration 2 - Time to transfer weights from GPU to CPU: 0.39 seconds
+Iteration 2 - Time to persist weights from CPU to disk: 2.42 seconds
+Iteration 2 - Total Time taken to save checkpoint: 2.81 seconds
+Iteration 3 - Time taken for forward pass: 0.13 seconds
+Iteration 3 - Time taken for backward pass: 0.11 seconds
+Iteration 3 - Time taken for weight update: 0.04 seconds
+Iteration 3 - Total time taken for iteration: 0.27 seconds
+Iteration 3 - Time to transfer weights from GPU to CPU: 0.38 seconds
+Iteration 3 - Time to persist weights from CPU to disk: 2.87 seconds
+Iteration 3 - Total Time taken to save checkpoint: 3.25 seconds
+Iteration 4 - Time taken for forward pass: 0.12 seconds
+Iteration 4 - Time taken for backward pass: 0.11 seconds
+Iteration 4 - Time taken for weight update: 0.03 seconds
+Iteration 4 - Total time taken for iteration: 0.27 seconds
+Iteration 4 - Time to transfer weights from GPU to CPU: 0.37 seconds
+Iteration 4 - Time to persist weights from CPU to disk: 4.31 seconds
+Iteration 4 - Total Time taken to save checkpoint: 4.68 seconds
+Iteration 5 - Time taken for forward pass: 0.12 seconds
+Iteration 5 - Time taken for backward pass: 0.12 seconds
+Iteration 5 - Time taken for weight update: 0.04 seconds
+Iteration 5 - Total time taken for iteration: 0.27 seconds
+Iteration 5 - Time to transfer weights from GPU to CPU: 0.38 seconds
+Iteration 5 - Time to persist weights from CPU to disk: 3.88 seconds
+Iteration 5 - Total Time taken to save checkpoint: 4.26 seconds
+Iteration 6 - Time taken for forward pass: 0.11 seconds
+Iteration 6 - Time taken for backward pass: 0.11 seconds
+Iteration 6 - Time taken for weight update: 0.03 seconds
+Iteration 6 - Total time taken for iteration: 0.25 seconds
+Iteration 6 - Time to transfer weights from GPU to CPU: 0.37 seconds
+Iteration 6 - Time to persist weights from CPU to disk: 3.41 seconds
+Iteration 6 - Total Time taken to save checkpoint: 3.77 seconds
+Iteration 7 - Time taken for forward pass: 0.12 seconds
+Iteration 7 - Time taken for backward pass: 0.11 seconds
+Iteration 7 - Time taken for weight update: 0.03 seconds
+Iteration 7 - Total time taken for iteration: 0.26 seconds
+Iteration 7 - Time to transfer weights from GPU to CPU: 0.37 seconds
+Iteration 7 - Time to persist weights from CPU to disk: 4.45 seconds
+Iteration 7 - Total Time taken to save checkpoint: 4.82 seconds
+Iteration 8 - Time taken for forward pass: 0.13 seconds
+Iteration 8 - Time taken for backward pass: 0.11 seconds
+Iteration 8 - Time taken for weight update: 0.03 seconds
+Iteration 8 - Total time taken for iteration: 0.28 seconds
+Iteration 8 - Time to transfer weights from GPU to CPU: 0.37 seconds
+Iteration 8 - Time to persist weights from CPU to disk: 4.01 seconds
+Iteration 8 - Total Time taken to save checkpoint: 4.38 seconds
+Iteration 9 - Time taken for forward pass: 0.12 seconds
+Iteration 9 - Time taken for backward pass: 0.11 seconds
+Iteration 9 - Time taken for weight update: 0.03 seconds
+Iteration 9 - Total time taken for iteration: 0.26 seconds
+Iteration 9 - Time to transfer weights from GPU to CPU: 0.36 seconds
+Iteration 9 - Time to persist weights from CPU to disk: 3.80 seconds
+Iteration 9 - Total Time taken to save checkpoint: 4.16 seconds
+Iteration 10 - Time taken for forward pass: 0.12 seconds
+Iteration 10 - Time taken for backward pass: 0.11 seconds
+Iteration 10 - Time taken for weight update: 0.04 seconds
+Iteration 10 - Total time taken for iteration: 0.27 seconds
+Iteration 10 - Time to transfer weights from GPU to CPU: 0.39 seconds
+Iteration 10 - Time to persist weights from CPU to disk: 1.88 seconds
+Iteration 10 - Total Time taken to save checkpoint: 2.27 seconds
+Total training time for 1 epoch with RoBERTa (excluding first iteration): 2.6393184661865234
+Running benchmark for T5...
+Starting training for 1 epoch with 10 iterations
+Iteration 2 - Time taken for forward pass: 0.13 seconds
+Iteration 2 - Time taken for backward pass: 0.09 secondsSome weights of the PyTorch model were not used when initializing the TF 2.0 model TFDistilBertModel: ['vocab_transform.weight', 'vocab_layer_norm.bias', 'vocab_layer_norm.weight', 'vocab_projector.bias', 'vocab_transform.bias']
+- This IS expected if you are initializing TFDistilBertModel from a PyTorch model trained on another task or with another architecture (e.g. initializing a TFBertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing TFDistilBertModel from a PyTorch model that you expect to be exactly identical (e.g. initializing a TFBertForSequenceClassification model from a BertForSequenceClassification model).
+All the weights of TFDistilBertModel were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDistilBertModel for predictions without further training.
+
+Iteration 2 - Time taken for weight update: 0.12 seconds
+Iteration 2 - Total time taken for iteration: 0.34 seconds
+Iteration 2 - Time to transfer weights from GPU to CPU: 0.15 seconds
+Iteration 2 - Time to persist weights from CPU to disk: 1.14 seconds
+Iteration 2 - Total Time taken to save checkpoint: 1.29 seconds
+Iteration 3 - Time taken for forward pass: 0.13 seconds
+Iteration 3 - Time taken for backward pass: 0.09 seconds
+Iteration 3 - Time taken for weight update: 0.02 seconds
+Iteration 3 - Total time taken for iteration: 0.25 seconds
+Iteration 3 - Time to transfer weights from GPU to CPU: 0.15 seconds
+Iteration 3 - Time to persist weights from CPU to disk: 1.17 seconds
+Iteration 3 - Total Time taken to save checkpoint: 1.32 seconds
+Iteration 4 - Time taken for forward pass: 0.13 seconds
+Iteration 4 - Time taken for backward pass: 0.09 seconds
+Iteration 4 - Time taken for weight update: 0.02 seconds
+Iteration 4 - Total time taken for iteration: 0.24 seconds
+Iteration 4 - Time to transfer weights from GPU to CPU: 0.14 seconds
+Iteration 4 - Time to persist weights from CPU to disk: 0.98 seconds
+Iteration 4 - Total Time taken to save checkpoint: 1.12 seconds
+Iteration 5 - Time taken for forward pass: 0.14 seconds
+Iteration 5 - Time taken for backward pass: 0.10 seconds
+Iteration 5 - Time taken for weight update: 0.03 seconds
+Iteration 5 - Total time taken for iteration: 0.26 seconds
+Iteration 5 - Time to transfer weights from GPU to CPU: 0.15 seconds
+Iteration 5 - Time to persist weights from CPU to disk: 1.61 seconds
+Iteration 5 - Total Time taken to save checkpoint: 1.76 seconds
+Iteration 6 - Time taken for forward pass: 0.14 seconds
+Iteration 6 - Time taken for backward pass: 0.09 seconds
+Iteration 6 - Time taken for weight update: 0.02 seconds
+Iteration 6 - Total time taken for iteration: 0.25 seconds
+Iteration 6 - Time to transfer weights from GPU to CPU: 0.15 seconds
+Iteration 6 - Time to persist weights from CPU to disk: 1.80 seconds
+Iteration 6 - Total Time taken to save checkpoint: 1.94 seconds
+Iteration 7 - Time taken for forward pass: 0.14 seconds
+Iteration 7 - Time taken for backward pass: 0.09 seconds
+Iteration 7 - Time taken for weight update: 0.02 seconds
+Iteration 7 - Total time taken for iteration: 0.25 seconds
+Iteration 7 - Time to transfer weights from GPU to CPU: 0.15 seconds
+Iteration 7 - Time to persist weights from CPU to disk: 1.20 seconds
+Iteration 7 - Total Time taken to save checkpoint: 1.35 seconds
+Iteration 8 - Time taken for forward pass: 0.14 seconds
+Iteration 8 - Time taken for backward pass: 0.10 seconds
+Iteration 8 - Time taken for weight update: 0.02 seconds
+Iteration 8 - Total time taken for iteration: 0.26 seconds
+Iteration 8 - Time to transfer weights from GPU to CPU: 0.15 seconds
+Iteration 8 - Time to persist weights from CPU to disk: 0.99 seconds
+Iteration 8 - Total Time taken to save checkpoint: 1.14 seconds
+Iteration 9 - Time taken for forward pass: 0.13 seconds
+Iteration 9 - Time taken for backward pass: 0.09 seconds
+Iteration 9 - Time taken for weight update: 0.02 seconds
+Iteration 9 - Total time taken for iteration: 0.25 seconds
+Iteration 9 - Time to transfer weights from GPU to CPU: 0.14 seconds
+Iteration 9 - Time to persist weights from CPU to disk: 1.64 seconds
+Iteration 9 - Total Time taken to save checkpoint: 1.78 seconds
+Iteration 10 - Time taken for forward pass: 0.14 seconds
+Iteration 10 - Time taken for backward pass: 0.09 seconds
+Iteration 10 - Time taken for weight update: 0.02 seconds
+Iteration 10 - Total time taken for iteration: 0.25 seconds
+Iteration 10 - Time to transfer weights from GPU to CPU: 0.15 seconds
+Iteration 10 - Time to persist weights from CPU to disk: 1.25 seconds
+Iteration 10 - Total Time taken to save checkpoint: 1.40 seconds
+Total training time for 1 epoch with T5 (excluding first iteration): 2.36706280708313
+Running benchmark for DistilBERT...
+Starting training for 1 epoch with 10 iterations
+Iteration 2 - Time taken for forward pass: 0.06 seconds
+Iteration 2 - Time taken for backward pass: 0.05 seconds
+Iteration 2 - Time taken for weight update: 0.09 seconds
+Iteration 2 - Total time taken for iteration: 0.21 seconds
+Iteration 2 - Time to transfer weights from GPU to CPU: 0.14 seconds
+Iteration 2 - Time to persist weights from CPU to disk: 1.03 seconds
+Iteration 2 - Total Time taken to save checkpoint: 1.17 seconds
+Iteration 3 - Time taken for forward pass: 0.06 seconds
+Iteration 3 - Time taken for backward pass: 0.05 seconds
+Iteration 3 - Time taken for weight update: 0.02 seconds
+Iteration 3 - Total time taken for iteration: 0.13 seconds
+Iteration 3 - Time to transfer weights from GPU to CPU: 0.15 seconds
+Iteration 3 - Time to persist weights from CPU to disk: 1.35 seconds
+Iteration 3 - Total Time taken to save checkpoint: 1.50 seconds
+Iteration 4 - Time taken for forward pass: 0.06 seconds
+Iteration 4 - Time taken for backward pass: 0.05 seconds
+Iteration 4 - Time taken for weight update: 0.02 seconds
+Iteration 4 - Total time taken for iteration: 0.14 seconds
+Iteration 4 - Time to transfer weights from GPU to CPU: 0.14 seconds
+Iteration 4 - Time to persist weights from CPU to disk: 1.34 seconds
+Iteration 4 - Total Time taken to save checkpoint: 1.48 seconds
+Iteration 5 - Time taken for forward pass: 0.06 seconds
+Iteration 5 - Time taken for backward pass: 0.05 seconds
+Iteration 5 - Time taken for weight update: 0.02 seconds
+Iteration 5 - Total time taken for iteration: 0.13 seconds
+Iteration 5 - Time to transfer weights from GPU to CPU: 0.15 seconds
+Iteration 5 - Time to persist weights from CPU to disk: 0.97 seconds
+Iteration 5 - Total Time taken to save checkpoint: 1.12 seconds
+Iteration 6 - Time taken for forward pass: 0.06 seconds
+Iteration 6 - Time taken for backward pass: 0.06 seconds
+Iteration 6 - Time taken for weight update: 0.02 seconds
+Iteration 6 - Total time taken for iteration: 0.14 seconds
+Iteration 6 - Time to transfer weights from GPU to CPU: 0.14 seconds
+Iteration 6 - Time to persist weights from CPU to disk: 1.00 seconds
+Iteration 6 - Total Time taken to save checkpoint: 1.14 seconds
+Iteration 7 - Time taken for forward pass: 0.06 seconds
+Iteration 7 - Time taken for backward pass: 0.05 seconds
+Iteration 7 - Time taken for weight update: 0.02 seconds
+Iteration 7 - Total time taken for iteration: 0.13 seconds
+Iteration 7 - Time to transfer weights from GPU to CPU: 0.14 seconds
+Iteration 7 - Time to persist weights from CPU to disk: 1.37 seconds
+Iteration 7 - Total Time taken to save checkpoint: 1.52 seconds
+Iteration 8 - Time taken for forward pass: 0.07 seconds
+Iteration 8 - Time taken for backward pass: 0.06 seconds
+Iteration 8 - Time taken for weight update: 0.02 seconds
+Iteration 8 - Total time taken for iteration: 0.14 seconds
+Iteration 8 - Time to transfer weights from GPU to CPU: 0.15 seconds
+Iteration 8 - Time to persist weights from CPU to disk: 1.99 seconds
+Iteration 8 - Total Time taken to save checkpoint: 2.14 seconds
+Iteration 9 - Time taken for forward pass: 0.06 seconds
+Iteration 9 - Time taken for backward pass: 0.06 seconds
+Iteration 9 - Time taken for weight update: 0.02 seconds
+Iteration 9 - Total time taken for iteration: 0.14 seconds
+Iteration 9 - Time to transfer weights from GPU to CPU: 0.15 seconds
+Iteration 9 - Time to persist weights from CPU to disk: 1.99 seconds
+Iteration 9 - Total Time taken to save checkpoint: 2.14 seconds
+Iteration 10 - Time taken for forward pass: 0.06 seconds
+Iteration 10 - Time taken for backward pass: 0.07 seconds
+Iteration 10 - Time taken for weight update: 0.02 seconds
+Iteration 10 - Total time taken for iteration: 0.16 seconds
+Iteration 10 - Time to transfer weights from GPU to CPU: 0.15 seconds
+Iteration 10 - Time to persist weights from CPU to disk: 1.57 seconds
+Iteration 10 - Total Time taken to save checkpoint: 1.72 seconds
+Total training time for 1 epoch with DistilBERT (excluding first iteration): 1.3152179718017578
+Benchmark results saved to result1.txt
